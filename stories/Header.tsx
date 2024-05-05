@@ -14,7 +14,7 @@ const links = [
   { name: "Contact", path: "/contact" },
 ];
 
-const NavigationLinks = ({ onCloseMenu }) => (
+const NavigationLinks = ({ onCloseMenu }: { onCloseMenu: () => void }) => (
   <>
     {links.map((link) => (
       <Link key={link.name} href={link.path}>
@@ -45,10 +45,6 @@ export const Header = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, [menuOpen]);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
 
   return (
     <>
