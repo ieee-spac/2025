@@ -19,7 +19,7 @@ const NavigationLinks = ({ onCloseMenu }) => (
     {links.map((link) => (
       <Link key={link.name} href={link.path}>
         <button
-          className={`btn btn-block md:btn-sm btn-primary btn-outline md:btn-ghost }`}
+          className="btn btn-block md:btn-sm btn-primary btn-outline md:btn-ghost"
           onClick={onCloseMenu}
         >
           {link.name}
@@ -55,7 +55,13 @@ export const Header = () => {
       {/* Top Header */}
       <header className="navbar fixed border-b-[0.25px] border-b-secondary backdrop-blur-xl overflow-hidden px-3 md:px-8 z-50">
         <div className="navbar-start">
-          <Image src={Logo} alt="IEEE SPAC Logo" className="w-16 md:w-20" />
+          <Link href="/">
+            <Image
+              src={Logo}
+              alt="IEEE SPAC Logo"
+              className="w-16 md:w-20 transition-all ease-in-out duration-500 hover:scale-110"
+            />
+          </Link>
         </div>
 
         <div className="navbar-end">
