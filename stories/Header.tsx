@@ -1,56 +1,74 @@
-import React from 'react';
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import Logo from "./assets/ieee_spac_logo_vertical_no_year.svg";
+import HamburgerButton from "./HamburgerButton";
 
-import { Button } from './Button';
-import './header.css';
+const links = [
+  { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
+  { name: "Schedule", path: "/schedule" },
+  { name: "Patronage", path: "/patronage" },
+  { name: "Gallery", path: "/gallery" },
+  { name: "FAQ", path: "/faq" },
+  { name: "Contact", path: "/contact" },
+];
 
-type User = {
-  name: string;
-};
-
-interface HeaderProps {
-  user?: User;
-  onLogin?: () => void;
-  onLogout?: () => void;
-  onCreateAccount?: () => void;
-}
-
-export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
-  <header>
-    <div className="storybook-header">
-      <div>
-        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-          <g fill="none" fillRule="evenodd">
-            <path
-              d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
-              fill="#FFF"
-            />
-            <path
-              d="M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z"
-              fill="#555AB9"
-            />
-            <path
-              d="M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z"
-              fill="#91BAF8"
-            />
-          </g>
-        </svg>
-        <h1>Acme</h1>
-      </div>
-      <div>
-        {user ? (
-          <>
-            <span className="welcome">
-              Welcome, <b>{user.name}</b>!
-            </span>
-            <Button size="small" onClick={onLogout} label="Log out" />
-          </>
-        ) : (
-          <>
-            <Button size="small" onClick={onLogin} label="Log in" />
-            <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
-          </>
-        )}
-      </div>
-    </div>
-  </header>
+const NavigationLinks = ({ onCloseMenu }) => (
+  <>
+    {links.map((link) => (
+      <Link key={link.name} href={link.path}>
+        <button
+          className={`btn btn-block md:btn-sm btn-primary btn-outline md:btn-ghost hover:bg-primary transition hover:cursor-pointer hover:scale-110 duration-500 ease-in-out}`}
+          onClick={onCloseMenu}
+        >
+          {link.name}
+        </button>
+      </Link>
+    ))}
+  </>
 );
+
+export const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768 && menuOpen) {
+        setMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [menuOpen]);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  return (
+    <header className="navbar fixed border-b-[0.25px] border-b-secondary overflow-hidden px-3 md:px-8">
+      <div className="navbar-start">
+        <Image src={Logo} alt="IEEE SPAC Logo" className="w-16 md:w-20" />
+      </div>
+
+      <div className="navbar-end">
+        <HamburgerButton menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+
+        {/* Navigation Menu for both Desktop and Mobile*/}
+        <nav>
+          {/* The menu tag is the same as ul, just a bit for semantic for the context of navbars */}
+          <menu
+            className={`menu menu-vertical md:menu-horizontal space-y-4 md:space-y-0 md:space-x-4 border border-secondary border-opacity md:border-none p-4 fixed top-20 md:top-0 right-0 w-fit backdrop-blur-md md:backdrop-blur-none rounded-xl transition transform ease-in-out duration-700 ${menuOpen ? "mr-4" : "translate-x-full md:translate-x-0"}`}
+          >
+            <NavigationLinks onCloseMenu={() => setMenuOpen(false)} />
+          </menu>
+        </nav>
+      </div>
+    </header>
+  );
+};
