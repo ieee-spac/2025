@@ -25,3 +25,14 @@
 /*     ) */
 /*     rgb(var(--background-start-rgb)); */
 /* } */
+
+
+/* Override/extend DaisyUI classes */
+
+.btn{
+  @apply transition transform ease-in-out duration-500 hover:scale-105;
+}
+
+.link{
+  @apply inline-flex transition transform ease-in-out duration-500 hover:scale-105 hover:text-neutral no-underline;
+}
