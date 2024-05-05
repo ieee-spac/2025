@@ -29,7 +29,7 @@
 /* Override/extend DaisyUI classes */
 
 .btn {
-  @apply transition-all ease-in-out duration-700 hover:scale-105;
+  @apply transition-all ease-in-out duration-700 hover:scale-110;
 }
 
 .link {
