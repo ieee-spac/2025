@@ -5,54 +5,7 @@ import presentation_section_image from "./assets/presentation_section_image.svg"
 import professional_1_on_1_image from "./assets/professional_1_on_1_image.svg";
 import workshops_image from "./assets/workshops_image.svg";
 
-// ColourBubble Component
-// const ColourBubble = ({
-//   number,
-//   text,
-//   color,
-// }: {
-//   number: string;
-//   text: string;
-//   color: string;
-// }) => (
-// <div className="bg-primary text-white p-4 rounded-full flex justify-center items-center w-32 h-32">
-//   <div className="text-center">
-//     <h4 className="text-6xl font-semibold">{number}</h4>
-//     <p className="font-semibold">{text}</p>
-//   </div>
-// </div>
-// );
-
-// SectionItem Component
-const SectionItem = ({
-  title,
-  description,
-  imgSrc,
-  imgAlt,
-}: {
-  title: string;
-  description: string;
-  imgSrc: string;
-  imgAlt: string;
-}) => (
-  <div className="flex justify-between">
-    <div className="space-y-5">
-      <h4 className="text-4xl font-semibold">{title}</h4>
-      <p className="text-2xl">{description}</p>
-    </div>
-    {imgSrc && <Image src={imgSrc} alt={imgAlt} className="w-40" />}
-  </div>
-);
-
-// Data for Colour Bubbles
-const bubbles = [
-  { number: "100", text: "Companies", color: "accent" },
-  { number: "200", text: "Students", color: "success" },
-  { number: "9", text: "Years", color: "warning" },
-  { number: "300", text: "Attendees", color: "secondary" },
-];
-
-// Data for Section Items
+// Data for "A typical SPAC" section Items
 const sections = [
   {
     title: "Presentation Section",
@@ -89,11 +42,51 @@ const sections = [
   },
 ];
 
+// Render events in the "A typical SPAC" section
+const SectionItem = ({
+  title,
+  description,
+  imgSrc,
+  imgAlt,
+  isReversed = false,
+}: {
+  title: string;
+  description: string;
+  imgSrc: string;
+  imgAlt: string;
+  isReversed: boolean;
+}) => (
+  <div
+    className={`flex ${isReversed ? "flex-row-reverse" : "flex-row"} justify-between items-center w-full`}
+  >
+    {/* Text Container */}
+    <div className="w-1/2 flex flex-col justify-center">
+      <h4 className="text-xl sm:text-2xl md:text-3xl font-semibold">{title}</h4>
+      <p className="text-sm sm:text-base md:text-lg">{description}</p>
+    </div>
+
+    {/* Image Container */}
+    <div
+      className={`w-1/2 flex ${isReversed ? "justify-start mr-4" : "justify-end"} items-center `}
+    >
+      {imgSrc && (
+        <Image
+          src={imgSrc}
+          alt={imgAlt}
+          className="w-full max-w-[160px] h-auto"
+        />
+      )}
+    </div>
+  </div>
+);
+
 export const About = () => {
   return (
-    <article className="px-3 md:px-8 max-w-2xl mx-auto">
+    <article className="px-3 md:px-8 max-w-2xl mx-auto space-y-10">
       <section className="space-y-8">
-        <h2 className="text-primary text-6xl font-bold">About Us</h2>
+        <h2 className="text-primary text-5xl sm:text-6xl font-bold">
+          About Us
+        </h2>
         <p className="text-base-content">
           The IEEE Student Professional Awareness Conference (SPAC) is a formal
           networking event & dinner that serves esteemed professionals and
@@ -106,49 +99,47 @@ export const About = () => {
           boardrooms, thereby empowering attendees to build professional
           connections and form a bond.
         </p>
-        {/* <div className="flex justify-around"> */}
-        {/*   {bubbles.map((bubble) => ( */}
-        {/*     <ColourBubble */}
-        {/*       key={bubble.text} */}
-        {/*       number={bubble.number} */}
-        {/*       text={bubble.text} */}
-        {/*       color={bubble.color} */}
-        {/*     /> */}
-        {/*   ))} */}
-        {/* </div> */}
 
-        {/* <h4 className="text-7xl font-bold">100</h4> */}
-        {/* <p className="font-semibold">Companies</p> */}
-        {/* <h4 className="text-5xl font-bold">200</h4> */}
-        {/* <p className="font-semibold">Students</p> */}
-        {/* <h4 className="text-5xl font-bold">9</h4> */}
-        {/* <p className="font-semibold">Years</p> */}
-        {/* <h4 className="text-5xl font-bold">300</h4> */}
-        {/* <p className="font-semibold">Attendees</p> */}
-
+        {/* Colour Bubbles */}
         <div className="grid grid-flow-col mx-auto justify-center h-[38vw] max-h-56">
           <div className="bg-accent text-accent-content h-full aspect-square rounded-full flex items-center justify-center text-center sm:-mr-1">
             <div className="">
-              <h4 className="text-5xl min-[375px]:text-6xl min-[425px]:text-7xl sm:text-8xl font-bold">100</h4>
-              <p className="min-[375px]:text-xl min-[425px]:text-2xl sm:text-3xl font-bold">Companies</p>
+              <h4 className="text-5xl min-[375px]:text-6xl min-[425px]:text-7xl sm:text-8xl font-bold">
+                100
+              </h4>
+              <p className="min-[375px]:text-xl min-[425px]:text-2xl sm:text-3xl font-bold">
+                Companies
+              </p>
             </div>
           </div>
           <div className="bg-neutral text-neutral-content h-[49%] aspect-square rounded-full flex items-center justify-center text-center self-end -mr-4 sm:-mr-8">
             <div>
-              <h4 className="text-xl min-[375px]:text-3xl min-[425px]:text-4xl sm:text-5xl font-bold">200</h4>
-              <p className=" text-[0.5rem] min-[375px]:text-xs min-[425px]:text-sm sm:text-md font-bold">Students</p>
+              <h4 className="text-xl min-[375px]:text-3xl min-[425px]:text-4xl sm:text-5xl font-bold">
+                200
+              </h4>
+              <p className=" text-[0.5rem] min-[375px]:text-xs min-[425px]:text-sm sm:text-md font-bold">
+                Students
+              </p>
             </div>
           </div>
           <div className="bg-warning text-warning-content h-[65%] aspect-square rounded-full flex items-center justify-center text-center self-start -mr-3 sm:-mr-5">
             <div>
-              <h4 className="text-4xl min-[425px]:text-5xl sm:text-6xl font-bold">9</h4>
-              <p className="min-[375px]:text-xl min-[425px]:text-2xl sm:text-3xl font-bold">Years</p>
+              <h4 className="text-4xl min-[425px]:text-5xl sm:text-6xl font-bold">
+                9
+              </h4>
+              <p className="min-[375px]:text-xl min-[425px]:text-2xl sm:text-3xl font-bold">
+                Years
+              </p>
             </div>
           </div>
           <div className="bg-secondary text-secondary-content h-[59%] aspect-square rounded-full flex items-center justify-center text-center self-end">
             <div>
-              <h4 className="text-3xl min-[375px]:text-4xl min-[425px]:text-5xl sm:text-6xl font-bold">300</h4>
-              <p className="text-[0.5rem] min-[375px]:text-xs min-[425px]:text-sm sm:text-md font-bold">Attendees</p>
+              <h4 className="text-3xl min-[375px]:text-4xl min-[425px]:text-5xl sm:text-6xl font-bold">
+                300
+              </h4>
+              <p className="text-[0.5rem] min-[375px]:text-xs min-[425px]:text-sm sm:text-md font-bold">
+                Attendees
+              </p>
             </div>
           </div>
         </div>
@@ -159,15 +150,16 @@ export const About = () => {
           complements their ongoing studies.
         </p>
       </section>
-      <section className="space-y-6">
-        <h3 className="text-5xl font-semibold">A typical SPAC...</h3>
-        {sections.map((section) => (
+      <section className="space-y-8">
+        <h3 className="text-3xl sm:text-4xl md:text-5xl font-semibold pb-6">A typical SPAC...</h3>
+        {sections.map((section, index) => (
           <SectionItem
             key={section.title}
             title={section.title}
             description={section.description}
             imgSrc={section.imgSrc}
             imgAlt={section.imgAlt}
+            isReversed={index % 2 !== 0}
           />
         ))}
       </section>
