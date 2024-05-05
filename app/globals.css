@@ -26,13 +26,39 @@
 /*     rgb(var(--background-start-rgb)); */
 /* } */
 
-
 /* Override/extend DaisyUI classes */
 
-.btn{
-  @apply transition transform ease-in-out duration-500 hover:scale-105;
+.btn {
+  @apply transition-all ease-in-out duration-700 hover:scale-105;
 }
 
-.link{
+.link {
   @apply inline-flex transition transform ease-in-out duration-500 hover:scale-105 hover:text-neutral no-underline;
+}
+
+@keyframes bobbing {
+  0%,
+  100% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+}
+
+.bobbing-animation-1 {
+  animation: bobbing 4s ease-in-out infinite;
+}
+
+.bobbing-animation-2 {
+  animation: bobbing 3.5s ease-in-out infinite;
+}
+.bobbing-animation-3 {
+  animation: bobbing 3s ease-in-out infinite;
+}
+.bobbing-animation-4 {
+  animation: bobbing 2.5s ease-in-out infinite;
+}
+.bobbing-animation-5 {
+  animation: bobbing 2s ease-in-out infinite;
 }
