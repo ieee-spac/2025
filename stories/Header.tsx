@@ -53,7 +53,7 @@ export const Header = () => {
   return (
     <>
       {/* Top Header */}
-      <header className="navbar fixed border-b-[0.25px] border-b-secondary backdrop-blur-sm overflow-hidden px-3 md:px-8">
+      <header className="navbar fixed border-b-[0.25px] border-b-secondary backdrop-blur-xl overflow-hidden px-3 md:px-8 z-50">
         <div className="navbar-start">
           <Image src={Logo} alt="IEEE SPAC Logo" className="w-16 md:w-20" />
         </div>
@@ -67,7 +67,7 @@ export const Header = () => {
       <nav>
         {/* The menu tag is the same as ul, just a bit for semantic for the context of navbars */}
         <menu
-          className={`menu menu-vertical md:menu-horizontal space-y-4 md:space-y-0 md:space-x-4 border border-secondary border-opacity md:border-none p-4 fixed top-20 md:top-0 right-0 w-fit backdrop-blur-md md:backdrop-blur-none rounded-xl transition transform ease-in-out duration-700 z-50 ${menuOpen ? "mr-4" : "translate-x-full md:translate-x-0"}`}
+          className={`menu menu-vertical md:menu-horizontal space-y-4 md:space-y-0 md:space-x-4 border border-secondary border-opacity md:border-none p-4 fixed top-20 md:top-0 right-0 w-fit backdrop-blur-xl md:backdrop-blur-none rounded-xl transition transform ease-in-out duration-700 z-50 ${menuOpen ? "mr-4" : "translate-x-full md:translate-x-0"}`}
         >
           <NavigationLinks onCloseMenu={() => setMenuOpen(false)} />
         </menu>
