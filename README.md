@@ -1,4 +1,4 @@
-# 2024-ieee-spac-website
+# 2024 IEEE SPAC Website
 2024 edition of the IEEE SPAC (Student Professional Awareness Conference) website. The conference takes place in Ottawa, Ontario and is co-hosted by the IEEE chapters of the University of Ottawa and Carleton University.
 
 <details>
@@ -9,7 +9,7 @@
   <summary>Project Management</summary>
 <br>
 
-  - 
+  - Prioritizing tasks and not getting bogged down.
 </details>
 
 <details>
@@ -28,7 +28,9 @@
   <summary>Front-End Development</summary>
 <br>
 
-  -   
+  - Using [Storybook](https://storybook.js.org/) to develop components in isolation.
+  - Using [DaisyUI](https://daisyui.com/) to build out UI quickly.
+  - Rendering responsive Navbar with a single mapping function.
 
   </details>
 
