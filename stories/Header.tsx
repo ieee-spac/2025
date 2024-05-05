@@ -19,7 +19,7 @@ const NavigationLinks = ({ onCloseMenu }) => (
     {links.map((link) => (
       <Link key={link.name} href={link.path}>
         <button
-          className={`btn btn-block md:btn-sm btn-primary btn-outline md:btn-ghost hover:bg-primary transition hover:cursor-pointer hover:scale-110 duration-500 ease-in-out}`}
+          className={`btn btn-block md:btn-sm btn-primary btn-outline md:btn-ghost }`}
           onClick={onCloseMenu}
         >
           {link.name}
