@@ -71,9 +71,9 @@ export const Header = () => {
 
       {/* Navigation Menu for both Desktop and Mobile*/}
       <nav>
-        {/* The menu tag is the same as ul, just a bit for semantic for the context of navbars */}
+        {/* The menu tag is the same as ul, just a bit more semantic in the context of navbars */}
         <menu
-          className={`menu menu-vertical md:menu-horizontal space-y-4 md:space-y-0 md:space-x-4 border border-secondary border-opacity md:border-none p-4 fixed top-20 md:top-0 right-0 w-fit backdrop-blur-xl md:backdrop-blur-none rounded-xl transition transform ease-in-out duration-700 z-50 ${menuOpen ? "mr-4" : "translate-x-full md:translate-x-0"}`}
+          className={`menu menu-vertical md:menu-horizontal bg-black/[0.55] md:bg-transparent space-y-4 md:space-y-0 md:space-x-4 border border-secondary border-opacity md:border-none p-4 fixed top-20 md:top-0 right-0 w-fit backdrop-blur-xl md:backdrop-blur-none rounded-xl transition transform ease-in-out duration-700 z-50 ${menuOpen ? "mr-4" : "translate-x-full md:translate-x-0"}`}
         >
           <NavigationLinks onCloseMenu={() => setMenuOpen(false)} />
         </menu>
