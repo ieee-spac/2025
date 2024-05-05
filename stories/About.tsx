@@ -82,7 +82,7 @@ const SectionItem = ({
 
 export const About = () => {
   return (
-    <article className="px-3 md:px-8 max-w-2xl mx-auto space-y-10">
+    <article className="px-3 md:px-8 max-w-3xl mx-auto space-y-10 overflow-none">
       <section className="space-y-8">
         <h2 className="text-primary text-5xl sm:text-6xl font-bold">
           About Us
@@ -150,6 +150,8 @@ export const About = () => {
           complements their ongoing studies.
         </p>
       </section>
+
+      {/* A typical SPAC section */}
       <section className="space-y-8">
         <h3 className="text-3xl sm:text-4xl md:text-5xl font-semibold pb-6">A typical SPAC...</h3>
         {sections.map((section, index) => (
