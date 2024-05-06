@@ -26,7 +26,7 @@ const patronsData: Tier = {
       src: nokia_logo,
       alt: "Nokia logo",
       url: "https://www.nokia.com",
-      overrides: "w-full",
+      overrides: "w-full bobbing-animation-1",
     },
   ],
   gold: [
@@ -34,19 +34,19 @@ const patronsData: Tier = {
       src: fdm_logo,
       alt: "FDM Group logo",
       url: "https://www.fdmgroup.com",
-      overrides: "w-1/3",
+      overrides: "w-1/3 bobbing-animation-2",
     },
     {
       src: ciena_logo,
       alt: "Ciena logo",
       url: "https://www.ciena.com",
-      overrides: "w-1/3",
+      overrides: "w-1/3 bobbing-animation-3",
     },
     {
       src: public_service_commission_of_canada_logo,
       alt: "Public Service Commission of Canada logo",
       url: "https://www.canada.ca/en/public-service-commission.html",
-      overrides: "w-1/3",
+      overrides: "w-1/3 bobbing-animation-4",
     },
   ],
   silver: [
@@ -54,25 +54,25 @@ const patronsData: Tier = {
       src: drdc_canada_logo,
       alt: "DRDC Canada logo",
       url: "https://www.canada.ca/en/defence-research-development.html",
-      overrides: "w-1/4",
+      overrides: "w-1/4 bobbing-animation-1",
     },
     {
       src: ross_video_logo,
       alt: "Ross Video logo",
       url: "https://www.rossvideo.com",
-      overrides: "w-1/4",
+      overrides: "w-1/4 bobbing-animation-2",
     },
     {
       src: uber_logo,
       alt: "Uber logo",
       url: "https://www.uber.com",
-      overrides: "w-1/4",
+      overrides: "w-1/4 bobbing-animation-4",
     },
     {
       src: general_dynamics_logo,
       alt: "General Dynamics logo",
       url: "https://www.gd.com",
-      overrides: "w-1/4",
+      overrides: "w-1/4 bobbing-animation-3",
     },
   ],
 };
@@ -105,9 +105,9 @@ const LogoSection = ({
           href={logo.url}
           target="_blank"
           rel="noopener noreferrer"
-          className={`flex justify-center items-center ${logo.overrides} transition-all duration-700 hover:scale-110 p-2`}
+          className={`flex justify-center items-center ${logo.overrides} p-2`}
         >
-          <Image src={logo.src} alt={logo.alt} />
+          <Image src={logo.src} alt={logo.alt} className="transition-all duration-700 hover:scale-110"/>
         </a>
       ))}
     </div>
