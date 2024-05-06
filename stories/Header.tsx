@@ -7,10 +7,10 @@ import HamburgerButton from "./HamburgerButton";
 const links = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
-  { name: "Schedule", path: "/schedule" },
+  // { name: "Schedule", path: "/schedule" },
   { name: "Patronage", path: "/patronage" },
-  { name: "Gallery", path: "/gallery" },
-  { name: "FAQ", path: "/faq" },
+  // { name: "Gallery", path: "/gallery" },
+  // { name: "FAQ", path: "/faq" },
   { name: "Contact", path: "/contact" },
 ];
 
