@@ -49,7 +49,7 @@ export const Header = () => {
   return (
     <>
       {/* Top Header */}
-      <header className="navbar fixed border-b-[0.25px] border-b-secondary backdrop-blur-xl overflow-hidden px-3 md:px-8 z-50">
+      <header className="navbar fixed border-b-[0.25px] border-b-secondary backdrop-blur-xl overflow-hidden px-3 md:px-8 z-50 transition-all duration-700 hover:shadow-[0_0px_15px_rgba(0,202,255,0.5)]">
         <div className="navbar-start">
           <Link href="/">
             <Image
