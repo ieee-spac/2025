@@ -116,7 +116,7 @@ const LogoSection = ({
 
 export const PastPatrons = () => {
   return (
-    <div className="px-3 md:px-8 max-w-3xl mx-auto overflow-hidden mt-20 mb-32">
+    <div className="px-3 md:px-8 max-w-3xl mx-auto overflow-hidden mt-20">
       <h2 className="text-primary text-5xl sm:text-6xl font-bold mb-10">
         Past Patrons
       </h2>
