@@ -82,7 +82,7 @@ const SectionItem = ({
 
 export const About = () => {
   return (
-    <article className="px-3 md:px-8 max-w-3xl mx-auto space-y-10 overflow-none">
+    <article className="px-3 md:px-8 max-w-3xl mx-auto space-y-10 overflow-none mt-20">
       <section className="space-y-8">
         <h2 className="text-primary text-5xl sm:text-6xl font-bold">
           About Us
