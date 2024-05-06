@@ -9,37 +9,39 @@ import workshops_image from "./assets/workshops_image.svg";
 import CountUp from "react-countup";
 
 // Data for "A typical SPAC" section Items
-const sections = [
+const sections =
+
+  [
   {
     title: "Presentation Section",
-    description: "Spot for speakers and event kickoff",
+    description: "A dynamic opening with key speakers introducing the event's themes and goals.",
     imgSrc: presentation_section_image,
     imgAlt: "Presentation",
   },
   {
     title: "Professional 1:1",
     description:
-      "Quick one-on-one conversations with students in your discipline",
+      "Engage in personalized discussions with industry professionals tailored to your career interests.",
     imgSrc: professional_1_on_1_image,
     imgAlt: "Professional Conversation",
   },
   {
     title: "Exclusive Masterclass",
-    description: "Stand alone event to reach out, showcase, and finesse.",
+    description: "Interactive sessions with experts to deepen your knowledge and enhance your skills.",
     imgSrc: exclusive_masterclass_image,
     imgAlt: "Masterclass",
   },
   {
     title: "Workshops",
     description:
-      "Concurrently run, where you show students what you're all about.",
+      "Hands-on workshops designed to showcase practical skills and industry insights.",
     imgSrc: workshops_image,
     imgAlt: "Workshops",
   },
   {
     title: "Networking Booths",
     description:
-      "Drop in to say hello, and learn more about what it's like to work at these companies.",
+      "Explore potential career paths and company cultures directly from the insiders.",
     imgSrc: networking_booths_image,
     imgAlt: "Networking",
   },
@@ -64,8 +66,8 @@ const SectionItem = ({
   >
     {/* Text Container */}
     <div className="w-1/2 flex flex-col justify-center">
-      <h4 className="text-xl sm:text-2xl md:text-3xl font-semibold">{title}</h4>
-      <p className="text-sm sm:text-base md:text-lg">{description}</p>
+      <h4 className="text-xl sm:text-2xl md:text-3xl font-semibold text-base-content">{title}</h4>
+      <p className="text-sm sm:text-base md:text-lg text-stone-400">{description}</p>
     </div>
 
     {/* Image Container */}
