@@ -95,7 +95,7 @@ const LogoSection = ({
 }: LogoSectionProps) => (
   <>
     <h3
-      className={`text-3xl sm:text-4xl md:text-5xl font-semibold text-${titleColor} mb-4`}
+      className={`text-3xl sm:text-4xl md:text-5xl font-semibold ${titleColor} mb-4`}
     >
       {title}
     </h3>
@@ -134,19 +134,19 @@ export const PastPatrons = () => {
       />
       <LogoSection
         title="Partner"
-        titleColor="warning"
+        titleColor="text-warning"
         logos={patronsData.partner}
         gradientClass="from-warning via-accent to-black"
       />
       <LogoSection
         title="Gold"
-        titleColor="accent"
+        titleColor="text-accent"
         logos={patronsData.gold}
         gradientClass="from-accent via-secondary to-black"
       />
       <LogoSection
         title="Silver"
-        titleColor="slate-50"
+        titleColor="text-slate-50"
         logos={patronsData.silver}
         gradientClass="from-primary via-secondary to-black"
       />
