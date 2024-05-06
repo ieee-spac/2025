@@ -4,7 +4,8 @@ import ieee_spac_logo_combined_horizontal from "./assets/ieee_spac_logo_combined
 
 export const Footer = () => {
   return (
-    <footer className="footer items-center border-t-[0.25px] border-secondary text-neutral-content px-3 md:px-8 py-4 transition-all duration-700 hover:shadow-[0_0px_15px_rgba(0,202,255,0.5)]">
+    <footer className="border-t-[0.25px] border-secondary text-neutral-content transition-all duration-700 hover:shadow-[0_0px_15px_rgba(0,202,255,0.5)]">
+      <footer className="footer items-center max-w-7xl w-full mx-auto px-3 md:px-8 py-4">
       <aside className="items-center grid-flow-col">
         <Link href="/">
           <Image
@@ -52,6 +53,7 @@ export const Footer = () => {
           </svg>
         </a>
       </nav>
+      </footer>
     </footer>
   );
 };
