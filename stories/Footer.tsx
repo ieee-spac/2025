@@ -4,7 +4,7 @@ import ieee_spac_logo_combined_horizontal from "./assets/ieee_spac_logo_combined
 
 export const Footer = () => {
   return (
-    <footer className="footer items-center border-t-[0.25px] border-b-secondary text-neutral-content px-3 md:px-8 py-4">
+    <footer className="footer items-center border-t-[0.25px] border-secondary text-neutral-content px-3 md:px-8 py-4">
       <aside className="items-center grid-flow-col">
         <Link href="/">
           <Image
