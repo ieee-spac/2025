@@ -116,7 +116,7 @@ const LogoSection = ({
 
 export const PastPatrons = () => {
   return (
-    <div className="px-3 md:px-8 max-w-3xl mx-auto overflow-hidden mt-20">
+    <div className="px-3 md:px-8 max-w-3xl mx-auto mt-20">
       <h2 className="text-primary text-5xl sm:text-6xl font-bold mb-10">
         Past Patrons
       </h2>
@@ -138,6 +138,12 @@ export const PastPatrons = () => {
         logos={patronsData.silver}
         gradientClass="from-primary via-secondary to-black"
       />
+        {/* Button(s) */}
+        <a href="mailto:patronage@ieeespac.ca?subject=SPAC 2024 Sponsorship Information Request&cc=lead@ieeespac.ca">
+          <button className="btn btn-outline btn-accent btn-lg w-full text-lg md:text-xl hover:shadow-[0_0px_10px_rgba(255,209,0,1)] uppercase">
+            Become a Patron
+          </button>
+        </a>
     </div>
   );
 };
