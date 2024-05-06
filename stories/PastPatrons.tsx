@@ -1,3 +1,4 @@
+import type { StaticImageData } from "next/image";
 import Image from "next/image";
 import nokia_logo from "./assets/nokia_logo.svg";
 import fdm_logo from "./assets/fdm_logo.svg";
@@ -7,10 +8,11 @@ import drdc_canada_logo from "./assets/drdc_canada_logo.svg";
 import ross_video_logo from "./assets/ross_video_logo.svg";
 import uber_logo from "./assets/uber_logo.svg";
 import general_dynamics_logo from "./assets/general_dynamics_logo.svg";
+import { Spotlight } from "./Spotlight";
 
 // Logo and Tier types
 type Logo = {
-  src: typeof Image;
+  src: StaticImageData;
   alt: string;
   url: string;
   overrides: string;
@@ -97,7 +99,9 @@ const LogoSection = ({
     >
       {title}
     </h3>
-    <span className={`block bg-gradient-to-r ${gradientClass} p-[0.5px] mb-4`} />
+    <span
+      className={`block bg-gradient-to-r ${gradientClass} p-[0.5px] mb-4`}
+    />
     <div className="flex items-end mb-8">
       {logos.map((logo) => (
         <a
@@ -107,7 +111,11 @@ const LogoSection = ({
           rel="noopener noreferrer"
           className={`flex justify-center items-center ${logo.overrides} p-2`}
         >
-          <Image src={logo.src} alt={logo.alt} className="transition-all duration-700 hover:scale-110"/>
+          <Image
+            src={logo.src}
+            alt={logo.alt}
+            className="transition-all duration-700 hover:scale-110"
+          />
         </a>
       ))}
     </div>
@@ -120,6 +128,10 @@ export const PastPatrons = () => {
       <h2 className="text-primary text-5xl sm:text-6xl font-bold mb-10">
         Past Patrons
       </h2>
+      <Spotlight
+        className="top-[150rem] -left-20 md:left-10 md:top-[140rem]"
+        fill="LightGoldenRodYellow"
+      />
       <LogoSection
         title="Partner"
         titleColor="warning"
@@ -138,12 +150,12 @@ export const PastPatrons = () => {
         logos={patronsData.silver}
         gradientClass="from-primary via-secondary to-black"
       />
-        {/* Button(s) */}
-        <a href="mailto:patronage@ieeespac.ca?subject=SPAC 2024 Sponsorship Information Request&cc=lead@ieeespac.ca">
-          <button className="btn btn-outline btn-accent btn-lg w-full text-lg md:text-xl hover:shadow-[0_0px_10px_rgba(255,209,0,1)] uppercase">
-            Become a Patron
-          </button>
-        </a>
+      {/* Button(s) */}
+      <a href="mailto:patronage@ieeespac.ca?subject=SPAC 2024 Sponsorship Information Request&cc=lead@ieeespac.ca">
+        <button className="btn btn-outline btn-accent btn-lg w-full text-lg md:text-xl hover:shadow-[0_0px_10px_rgba(255,209,0,1)] uppercase">
+          Become a Patron
+        </button>
+      </a>
     </div>
   );
 };
