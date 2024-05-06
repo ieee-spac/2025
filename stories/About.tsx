@@ -102,8 +102,8 @@ export const About = () => {
 
         {/* Colour Bubbles */}
         <div className="grid grid-flow-col mx-auto justify-center h-[38vw] max-h-56">
-          <div className="bg-accent text-accent-content h-full aspect-square rounded-full flex items-center justify-center text-center sm:-mr-1">
-            <div className="">
+          <div className="bg-accent text-accent-content h-full aspect-square rounded-full flex items-center justify-center text-center sm:-mr-1 bobbing-animation-1">
+            <div>
               <h4 className="text-5xl min-[375px]:text-6xl min-[425px]:text-7xl sm:text-8xl font-bold">
                 100
               </h4>
@@ -112,7 +112,7 @@ export const About = () => {
               </p>
             </div>
           </div>
-          <div className="bg-neutral text-neutral-content h-[49%] aspect-square rounded-full flex items-center justify-center text-center self-end -mr-4 sm:-mr-8">
+          <div className="bg-neutral text-neutral-content h-[49%] aspect-square rounded-full flex items-center justify-center text-center self-end -mr-4 sm:-mr-8 bobbing-animation-4">
             <div>
               <h4 className="text-xl min-[375px]:text-3xl min-[425px]:text-4xl sm:text-5xl font-bold">
                 200
@@ -122,7 +122,7 @@ export const About = () => {
               </p>
             </div>
           </div>
-          <div className="bg-warning text-warning-content h-[65%] aspect-square rounded-full flex items-center justify-center text-center self-start -mr-3 sm:-mr-5">
+          <div className="bg-warning text-warning-content h-[65%] aspect-square rounded-full flex items-center justify-center text-center self-start -mr-3 sm:-mr-5 bobbing-animation-2">
             <div>
               <h4 className="text-4xl min-[425px]:text-5xl sm:text-6xl font-bold">
                 9
@@ -132,7 +132,7 @@ export const About = () => {
               </p>
             </div>
           </div>
-          <div className="bg-secondary text-secondary-content h-[59%] aspect-square rounded-full flex items-center justify-center text-center self-end">
+          <div className="bg-secondary text-secondary-content h-[59%] aspect-square rounded-full flex items-center justify-center text-center self-end bobbing-animation-3">
             <div>
               <h4 className="text-3xl min-[375px]:text-4xl min-[425px]:text-5xl sm:text-6xl font-bold">
                 300
