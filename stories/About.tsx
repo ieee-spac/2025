@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import exclusive_masterclass_image from "./assets/exclusive_masterclass_image.svg";
 import networking_booths_image from "./assets/networking_booths_image.svg";
