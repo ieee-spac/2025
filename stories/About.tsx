@@ -106,7 +106,7 @@ export const About = () => {
         </p>
 
         {/* Colour Bubbles */}
-        <div className="grid grid-flow-col mx-auto justify-center h-[38vw] max-h-56">
+        <div className="grid grid-flow-col justify-center h-[38vw] max-h-56">
           <div className="bg-accent text-accent-content h-full aspect-square rounded-full flex items-center justify-center text-center sm:-mr-1 bobbing-animation-1">
             <div>
               <h4 className="text-5xl min-[375px]:text-6xl min-[425px]:text-7xl sm:text-8xl font-bold">
