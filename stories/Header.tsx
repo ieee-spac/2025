@@ -19,7 +19,7 @@ const NavigationLinks = ({ onCloseMenu }: { onCloseMenu: () => void }) => (
     {links.map((link) => (
       <Link key={link.name} href={link.path}>
         <button
-          className="btn btn-block md:btn-sm btn-primary btn-outline md:btn-ghost"
+          className="btn btn-block btn-lg btn-primary btn-outline md:btn-ghost bg-black/[0.25] md:bg-black/[0.25]"
           onClick={onCloseMenu}
         >
           {link.name}
@@ -49,27 +49,34 @@ export const Header = () => {
   return (
     <>
       {/* Top Header */}
-      <header className="navbar fixed border-b-[0.25px] border-b-secondary backdrop-blur-xl overflow-hidden px-3 md:px-8 z-50 transition-all duration-700 hover:shadow-[0_0px_15px_rgba(0,202,255,0.5)]">
-        <div className="navbar-start">
+      <header className="navbar fixed border-b-[0.25px] border-b-secondary backdrop-blur-xl overflow-hidden z-50 transition-all duration-700 hover:shadow-[0_0px_15px_rgba(0,202,255,0.5)]">
+        <div className="w-full max-w-7xl px-3 md:px-8 mx-auto flex justify-between">
+        <div>
           <Link href="/">
             <Image
               src={Logo}
               alt="IEEE SPAC Logo"
-              className="w-16 md:w-20 transition-all ease-in-out duration-500 hover:scale-110"
+              className="w-auto h-10 md:h-16 transition-all ease-in-out duration-500 hover:scale-110"
             />
           </Link>
         </div>
 
-        <div className="navbar-end">
+        <div>
           <HamburgerButton menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+          <nav className="hidden md:block">
+            <menu className="menu menu-horizontal flex-nowrap bg-transparent md:space-x-4 ">
+              <NavigationLinks onCloseMenu={() => setMenuOpen(false)} />
+            </menu>
+          </nav>
+        </div>
         </div>
       </header>
 
       {/* Navigation Menu for both Desktop and Mobile*/}
-      <nav>
+      <nav className="md:hidden">
         {/* The menu tag is the same as ul, just a bit more semantic in the context of navbars */}
         <menu
-          className={`menu menu-vertical md:menu-horizontal bg-black/[0.55] md:bg-transparent space-y-4 md:space-y-0 md:space-x-4 border border-secondary border-opacity md:border-none p-4 fixed top-20 md:top-0 right-0 w-fit backdrop-blur-xl md:backdrop-blur-none rounded-xl transition transform ease-in-out duration-700 z-50 ${menuOpen ? "mr-4" : "translate-x-full md:translate-x-0"}`}
+          className={`menu menu-vertical space-y-4 border border-secondary border-opacity p-4 fixed top-20 right-0 w-fit backdrop-blur-xl rounded-xl transition transform ease-in-out duration-700 z-50 ${menuOpen ? "mr-4" : "translate-x-full md:translate-x-0"}`}
         >
           <NavigationLinks onCloseMenu={() => setMenuOpen(false)} />
         </menu>
