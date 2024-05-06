@@ -4,6 +4,7 @@ import networking_booths_image from "./assets/networking_booths_image.svg";
 import presentation_section_image from "./assets/presentation_section_image.svg";
 import professional_1_on_1_image from "./assets/professional_1_on_1_image.svg";
 import workshops_image from "./assets/workshops_image.svg";
+import CountUp from "react-countup";
 
 // Data for "A typical SPAC" section Items
 const sections = [
@@ -105,7 +106,7 @@ export const About = () => {
           <div className="bg-accent text-accent-content h-full aspect-square rounded-full flex items-center justify-center text-center sm:-mr-1 bobbing-animation-1">
             <div>
               <h4 className="text-5xl min-[375px]:text-6xl min-[425px]:text-7xl sm:text-8xl font-bold">
-                100
+              <CountUp end={100} duration={3} enableScrollSpy scrollSpyOnce/>
               </h4>
               <p className="min-[375px]:text-xl min-[425px]:text-2xl sm:text-3xl font-bold">
                 Companies
@@ -115,7 +116,7 @@ export const About = () => {
           <div className="bg-neutral text-neutral-content h-[49%] aspect-square rounded-full flex items-center justify-center text-center self-end -mr-4 sm:-mr-8 bobbing-animation-4">
             <div>
               <h4 className="text-xl min-[375px]:text-3xl min-[425px]:text-4xl sm:text-5xl font-bold">
-                200
+              <CountUp end={200} duration={3} enableScrollSpy scrollSpyOnce/>
               </h4>
               <p className=" text-[0.5rem] min-[375px]:text-xs min-[425px]:text-sm sm:text-md font-bold">
                 Students
@@ -125,7 +126,7 @@ export const About = () => {
           <div className="bg-warning text-warning-content h-[65%] aspect-square rounded-full flex items-center justify-center text-center self-start -mr-3 sm:-mr-5 bobbing-animation-2">
             <div>
               <h4 className="text-4xl min-[425px]:text-5xl sm:text-6xl font-bold">
-                9
+              <CountUp end={9} duration={3} enableScrollSpy scrollSpyOnce/>
               </h4>
               <p className="min-[375px]:text-xl min-[425px]:text-2xl sm:text-3xl font-bold">
                 Years
@@ -135,7 +136,7 @@ export const About = () => {
           <div className="bg-secondary text-secondary-content h-[59%] aspect-square rounded-full flex items-center justify-center text-center self-end bobbing-animation-3">
             <div>
               <h4 className="text-3xl min-[375px]:text-4xl min-[425px]:text-5xl sm:text-6xl font-bold">
-                300
+              <CountUp end={300} duration={3} enableScrollSpy scrollSpyOnce/>
               </h4>
               <p className="text-[0.5rem] min-[375px]:text-xs min-[425px]:text-sm sm:text-md font-bold">
                 Attendees
