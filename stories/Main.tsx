@@ -5,7 +5,6 @@ export const Main = () => {
   return (
     // Grid background container
     <div className="min-h-screen flex justify-center items-center p-4 w-full dark:bg-black bg-white dark:bg-grid-green-600/[0.5] bg-grid-black/[0.2] overflow-none">
-
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_0%,black)]"></div>
 
@@ -35,9 +34,11 @@ export const Main = () => {
         </div>
 
         {/* Button(s) */}
-        <button className="btn btn-outline btn-accent btn-wide text-lg md:text-xl group-hover:shadow-[0_0px_10px_rgba(255,209,0,1)]">
-          Become a Patron
-        </button>
+        <a href="mailto:patronage@ieeespac.ca?subject=SPAC 2024 Sponsorship Information Request&cc=lead@ieeespac.ca">
+          <button className="btn btn-outline btn-accent btn-wide text-lg md:text-xl group-hover:shadow-[0_0px_10px_rgba(255,209,0,1)]">
+            Become a Patron
+          </button>
+        </a>
       </main>
     </div>
   );
