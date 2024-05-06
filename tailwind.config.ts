@@ -2,7 +2,8 @@ import type { Config } from "tailwindcss";
 import daisyui from "daisyui";
 
 const svgToDataUri = require("mini-svg-data-uri");
-const colors = require("tailwindcss/colors");
+// const colors = require("tailwindcss/colors");
+
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
@@ -22,11 +23,11 @@ const config: Config = {
       keyframes: {
         spotlight: {
           "0%": {
-            opacity: 0,
+            opacity: '0',
             transform: "translate(-72%, -62%) scale(0.5)",
           },
           "100%": {
-            opacity: 1,
+            opacity: '1',
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
@@ -63,7 +64,7 @@ const config: Config = {
     ],
   },
   plugins: [
-    require("daisyui"),
+    daisyui,
     addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
