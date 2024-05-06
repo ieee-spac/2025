@@ -1,7 +1,9 @@
 import { Header } from "./Header";
 import { Main } from "./Main";
-import {About} from './About';
-import {PastPatrons} from './PastPatrons';
+import { About } from "./About";
+import { PastPatrons } from "./PastPatrons";
+import { Contact } from "./Contact";
+import { Footer } from "./Footer";
 
 export const WebsitePage = () => {
   return (
@@ -9,7 +11,9 @@ export const WebsitePage = () => {
       <Header />
       <Main />
       <About />
-      <PastPatrons/>
+      <PastPatrons />
+      <Contact />
+      <Footer />
     </>
   );
 };
