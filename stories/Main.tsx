@@ -36,7 +36,7 @@ export const Main = () => {
 
         {/* Button(s) */}
         <button className="btn btn-outline btn-accent btn-wide text-lg md:text-xl group-hover:shadow-[0_0px_10px_rgba(255,209,0,1)]">
-          Become a Sponsor
+          Become a Patron
         </button>
       </main>
     </div>
