@@ -51,7 +51,7 @@ export const Contact = () => {
           </label>
 
           {/* Submit Button */}
-          <button className="btn btn-outline btn-accent btn-wide text-base md:text-lg">
+          <button className="btn btn-outline btn-accent btn-wide text-base md:text-lg uppercase">
             Submit
           </button>
         </form>
