@@ -1,6 +1,6 @@
-const HamburgerButton = ({ menuOpen, setMenuOpen }) => {
+const HamburgerButton = ({ menuOpen, setMenuOpen }:{menuOpen:boolean,setMenuOpen:(open:boolean)=> void}) => {
   // Create horizontal lines
-  const renderLine = (style) => (
+  const renderLine = (style:string) => (
     <hr
       aria-hidden="true"
       className={`block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out ${style}`}
