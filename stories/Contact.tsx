@@ -46,7 +46,7 @@ export const Contact = () => {
             </div>
             <textarea
               className="textarea textarea-bordered focus:input-secondary text-base"
-              placeholder="Type here"
+              placeholder="Please note that this website is still in development, and this contact form is not working😵‍💫 If you don't want your message getting lost in the void, please email lead@ieeespac.ca directly."
             ></textarea>
           </label>
 
