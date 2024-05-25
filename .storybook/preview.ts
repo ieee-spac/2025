@@ -19,8 +19,8 @@ const preview: Preview = {
           light: '',
           dark: 'dark',
       },
-      defaultTheme: 'light',
-      dataAttribute: 'data-theme',
+      defaultTheme: 'dark',
+      // dataAttribute: 'data-theme',
   })]
 };
 
