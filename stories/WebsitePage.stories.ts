@@ -1,9 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { fn } from '@storybook/test';
 import { WebsitePage } from './WebsitePage';
 
 const meta = {
-  title: 'Website/WebsitePage',
+  title: 'Website/Website Page',
   component: WebsitePage,
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs'],
@@ -12,9 +11,6 @@ const meta = {
     layout: 'fullscreen',
   },
   args: {
-    // onLogin: fn(),
-    // onLogout: fn(),
-    // onCreateAccount: fn(),
   },
 } satisfies Meta<typeof WebsitePage>;
 
