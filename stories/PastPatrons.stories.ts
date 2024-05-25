@@ -1,9 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { fn } from '@storybook/test';
 import { PastPatrons } from './PastPatrons';
 
 const meta = {
-  title: 'Website/PastPatrons',
+  title: 'Website/Past Patrons',
   component: PastPatrons,
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs'],
