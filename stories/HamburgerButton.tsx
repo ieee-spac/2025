@@ -1,4 +1,4 @@
-const HamburgerButton = ({ menuOpen, setMenuOpen }:{menuOpen:boolean,setMenuOpen:(open:boolean)=> void}) => {
+export const HamburgerButton = ({ menuOpen, setMenuOpen }:{menuOpen:boolean,setMenuOpen:(open:boolean)=> void}) => {
   // Create horizontal lines
   const renderLine = (style:string) => (
     <hr
@@ -23,4 +23,3 @@ const HamburgerButton = ({ menuOpen, setMenuOpen }:{menuOpen:boolean,setMenuOpen
   );
 };
 
-export default HamburgerButton;
