@@ -1,10 +1,10 @@
-'use client'
+"use client";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "./assets/ieee_spac_logo_vertical_no_year.svg";
-import HamburgerButton from "./HamburgerButton";
+import { HamburgerButton } from "./HamburgerButton";
 
 const links = [
   { name: "Home", path: "/" },
@@ -53,24 +53,24 @@ export const Header = () => {
       {/* Top Header */}
       <header className="navbar fixed border-b-[0.25px] border-b-secondary backdrop-blur-xl overflow-hidden z-50 transition-all duration-700 hover:shadow-[0_0px_15px_rgba(0,202,255,0.5)]">
         <div className="w-full max-w-7xl px-3 md:px-8 mx-auto flex justify-between">
-        <div>
-          <Link href="/">
-            <Image
-              src={Logo}
-              alt="IEEE SPAC Logo"
-              className="w-auto h-10 md:h-16 transition-all ease-in-out duration-500 hover:scale-110"
-            />
-          </Link>
-        </div>
+          <div>
+            <Link href="/">
+              <Image
+                src={Logo}
+                alt="IEEE SPAC Logo"
+                className="w-auto h-10 md:h-16 transition-all ease-in-out duration-500 hover:scale-110"
+              />
+            </Link>
+          </div>
 
-        <div>
-          <HamburgerButton menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-          <nav className="hidden md:block">
-            <menu className="menu menu-horizontal flex-nowrap bg-transparent md:space-x-4 ">
-              <NavigationLinks onCloseMenu={() => setMenuOpen(false)} />
-            </menu>
-          </nav>
-        </div>
+          <div>
+            <HamburgerButton menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+            <nav className="hidden md:block">
+              <menu className="menu menu-horizontal flex-nowrap bg-transparent md:space-x-4 ">
+                <NavigationLinks onCloseMenu={() => setMenuOpen(false)} />
+              </menu>
+            </nav>
+          </div>
         </div>
       </header>
 
