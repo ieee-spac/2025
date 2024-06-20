@@ -46,7 +46,10 @@ export const Contact = () => {
   };
 
   return (
-    <div className="overflow-none mx-auto my-20 max-w-3xl space-y-10 px-3 md:px-8">
+    <div
+      id="contact"
+      className="overflow-none mx-auto my-20 max-w-3xl space-y-10 px-3 md:px-8"
+    >
       <h3 className="text-5xl font-bold text-primary sm:text-6xl">Contact</h3>
 
       {/* Browser Container */}

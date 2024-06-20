@@ -7,7 +7,6 @@ const openSans = Open_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'SPAC 2024',
-
   description:
     'Official Website of the IEEE Student Professional Awareness Conference 2024, hosted in Ottawa, Ontario.',
 };
@@ -24,9 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      {' '}
-      <body className={openSans.className}>{children}</body>{' '}
+    <html className="scroll-pt-20 scroll-smooth md:scroll-pt-28" lang="en">
+      <body className={openSans.className}>{children}</body>
     </html>
   );
 }
