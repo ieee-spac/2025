@@ -92,7 +92,10 @@ const SectionItem = ({
 
 export const About = () => {
   return (
-    <article className="overflow-none mx-auto mt-20 max-w-3xl space-y-10 px-3 md:px-8">
+    <article
+      id="about"
+      className="overflow-none mx-auto mt-20 max-w-3xl space-y-10 px-3 md:px-8"
+    >
       <section className="space-y-8">
         <h2 className="text-5xl font-bold text-primary sm:text-6xl">
           About Us

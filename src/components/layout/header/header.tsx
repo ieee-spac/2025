@@ -10,19 +10,19 @@ import { HamburgerButton } from '@/components/ui/hamburger-button/hamburger-butt
 import Logo from '@/public/assets/ieee_spac_logo_vertical_no_year.svg';
 
 const links = [
-  { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
+  { name: 'Home', path: '#home' },
+  { name: 'About', path: '#about' },
   // { name: "Schedule", path: "/schedule" },
-  { name: 'Patronage', path: '/patronage' },
+  { name: 'Patronage', path: '#patronage' },
   // { name: "Gallery", path: "/gallery" },
   // { name: "FAQ", path: "/faq" },
-  { name: 'Contact', path: '/contact' },
+  { name: 'Contact', path: '#contact' },
 ];
 
 const NavigationLinks = ({ onCloseMenu }: { onCloseMenu: () => void }) => (
   <>
     {links.map((link) => (
-      <Link key={link.name} href={link.path}>
+      <Link key={link.name} href={link.path} scroll>
         <button
           className="btn btn-outline btn-primary btn-lg btn-block bg-black/[0.25] uppercase md:btn-ghost md:bg-black/[0.25]"
           onClick={onCloseMenu}
