@@ -31,7 +31,7 @@ export const Hero = () => {
             IEEE Student Professional Awareness Conference
           </p>
           <p className="text-xs md:text-xl">
-            November 1<sup>st</sup> |{' '}
+            November 1<sup>st</sup> |
             <a
               href="https://maps.app.goo.gl/wk5vdFH7StaCvsJf7"
               target="_blank"
