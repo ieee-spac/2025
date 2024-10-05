@@ -154,7 +154,7 @@ export function About() {
         </p>
 
         {/* Colour Bubbles */}
-        <div className="flex w-full h-[45vw] max-h-80">
+        <div className="flex w-full h-[45vw] max-h-80 ml-6 md:ml-10">
           {statData.map((item, index) => (
             <Bubble
               key={index}
