@@ -48,13 +48,13 @@ const DEFAULT_SOCIAL_MEDIA_ICONS_LIST = [
   },
   {
     name: 'Storybook',
-    url: 'https://665264891b6bc70eded9109a-fejlvqtgov.chromatic.com/?path=/docs/welcome--docs',
+    url: 'https://main--665264891b6bc70eded9109a.chromatic.com',
     Icon: SiStorybook,
     className: 'text-pink-500',
   },
   {
     name: 'Chromatic',
-    url: 'https://www.chromatic.com/library?appId=665264891b6bc70eded9109a&branch=dev',
+    url: 'https://www.chromatic.com/library?appId=665264891b6bc70eded9109a&branch=main',
     Icon: SiChromatic,
     className: 'text-orange-600',
   },
