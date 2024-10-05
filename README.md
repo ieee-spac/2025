@@ -39,7 +39,7 @@
   <tr>
     <th align="center">
       <a
-        href="https://665264891b6bc70eded9109a-fejlvqtgov.chromatic.com/?path=/docs/welcome--docs"
+        href="https://main--665264891b6bc70eded9109a.chromatic.com"
         ><strong>Storybook</strong></a
       >
     </th>
@@ -61,7 +61,7 @@
   <tr>
     <td align="center">
       <a
-        href="https://665264891b6bc70eded9109a-fejlvqtgov.chromatic.com/?path=/docs/welcome--docs"
+        href="https://main--665264891b6bc70eded9109a.chromatic.com"
       >
         <img
           src="https://github.com/user-attachments/assets/9a82999d-56aa-4117-ad5d-647a2252cefd"
