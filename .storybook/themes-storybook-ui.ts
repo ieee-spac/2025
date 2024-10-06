@@ -32,8 +32,10 @@ export const darkUIStorybook = {
   appBorderRadius: 8,
 
   // Typography
-  fontBase: '"Nunito Sans", -apple-system, ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif',
-  fontCode: 'ui-monospace, Menlo, Monaco, "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Droid Sans Mono", "Courier New", monospace',
+  fontBase:
+    '"Nunito Sans", -apple-system, ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  fontCode:
+    'ui-monospace, Menlo, Monaco, "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Droid Sans Mono", "Courier New", monospace',
   textColor: '#C9CDCF',
   textInverseColor: '#222425',
   textMutedColor: '#798186',
@@ -78,8 +80,10 @@ export const darkUIStorybook = {
 }
 
 export const lightUIStorybook = {
-  fontBase: '"Nunito Sans", -apple-system, ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif',
-  fontCode: 'ui-monospace, Menlo, Monaco, "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Droid Sans Mono", "Courier New", monospace',
+  fontBase:
+    '"Nunito Sans", -apple-system, ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  fontCode:
+    'ui-monospace, Menlo, Monaco, "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Droid Sans Mono", "Courier New", monospace',
   //  --background: 0 0% 100%;
   //  --foreground: 222.2 84% 4.9%;
   //
@@ -115,5 +119,5 @@ export const commonTheme = {
   brandTitle: 'IEEE SPAC 2024',
   brandUrl: '/',
   brandTarget: '_self',
-  brandImage: '/assets/spac_logo_year_stars.svg',
+  brandImage: '/assets/twilight-design-system/spac_logo_year_stars.svg',
 }

@@ -1,20 +1,13 @@
 import Image from 'next/image'
-import type { StaticImageData } from 'next/image'
 import { useTheme } from 'next-themes'
-import { getLogoByTheme } from '@/components/sections/home/patrons/patrons.data'
+import { getLogoByTheme } from '@/components/utils/get-logo-by-theme'
 
-interface Logo {
-  light: StaticImageData
-  dark: StaticImageData
-  alt: string
-  url: string
-  overrides: string
-}
+import type { ITIER_LOGO } from '@/content/constants'
 
 interface LogoSectionProps {
   title: string
   titleColor: string
-  logos?: Logo[]
+  logos?: ITIER_LOGO[]
   gradientClass: string
 }
 
@@ -50,6 +43,10 @@ export function LogoSection({
               src={getLogoByTheme(theme, logo)}
               alt={logo.alt}
               className="transition-all duration-700 hover:scale-110"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: '100%', height: 'auto' }}
             />
           </a>
         ))}

@@ -1,14 +1,11 @@
 import Image from 'next/image'
 
-import logo from '@root/public/assets/spac_logo_year_stars.svg'
-// import { SponsorshipPackage } from '@/components/sections/home/hero/sponsorship-package'
+import logo from '@root/public/assets/twilight-design-system/spac_logo_year_stars.svg'
 import { ShinyButton } from '@/components/twilight/shiny-button/shiny-button'
 import SparklesText from '@/components/twilight/sparkles-text/sparkles-text'
 import ShineBorder from '@/components/twilight/shine-pulse/shine-pulse'
 
-const LINK_PATRONAGE_PACKAGE = 'https://drive.google.com/file/d/1wfvpv5T8Xg-cmt5kmps9Gzlddq9_Cdc0/view?usp=sharing'
-const LINK_SPAC_TICKETS = 'https://events.vtools.ieee.org/m/436955'
-const LINK_SPAC_PLUS_AGM_TICKETS = 'https://events.vtools.ieee.org/m/435598'
+import { HERO, LINKS } from '@/content/constants'
 
 export function Hero() {
   return (
@@ -31,7 +28,7 @@ export function Hero() {
           <Image
             priority
             src={logo}
-            alt="Main SPAC logo with year and stars"
+            alt={HERO.IMAGE_ALT_TEXT}
             className="bobbing-animation-1 w-full max-w-lg transition-all duration-700 ease-in-out group-hover:drop-shadow-[0_0px_5px_rgba(0,202,255,1)] sm:max-w-xl"
           />
 
@@ -42,21 +39,21 @@ export function Hero() {
             text={(
               <div className="flex flex-col items-center space-y-2 text-center">
                 <p className="text-lg font-medium md:text-2xl">
-                  IEEE Student Professional Awareness Conference
+                  {HERO.TITLE}
                 </p>
                 <p className="text-xs md:text-xl font-thin">
-                  November 1
+                  {HERO.DATE}
                   <sup>st</sup>
                   {' '}
                   |
                   {' '}
                   <a
-                    href="https://maps.app.goo.gl/wk5vdFH7StaCvsJf7"
+                    href={HERO.LOCATION_LINK}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="link"
                   >
-                    Brookstreet Hotel
+                    {HERO.LOCATION}
                   </a>
                 </p>
               </div>
@@ -64,7 +61,7 @@ export function Hero() {
           />
           <div className="flex flex-wrap lg:flex-nowrap md:text-nowrap w-full justify-center gap-2">
             <a
-              href={LINK_PATRONAGE_PACKAGE}
+              href={LINKS.PATRONAGE_PACKAGE}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -73,7 +70,7 @@ export function Hero() {
               />
             </a>
             <a
-              href={LINK_SPAC_TICKETS}
+              href={LINKS.SPAC_TICKETS}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -82,7 +79,7 @@ export function Hero() {
               />
             </a>
             <a
-              href={LINK_SPAC_PLUS_AGM_TICKETS}
+              href={LINKS.SPAC_PLUS_AGM_TICKETS}
               target="_blank"
               rel="noopener noreferrer"
             >

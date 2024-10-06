@@ -6,7 +6,7 @@ export function HeaderLogo({ logo }: { logo: string }) {
     <Link href="/">
       <Image
         src={logo}
-        alt="Logo"
+        alt="SPAC 2024 Logo"
         className="h-10 w-auto transition-all duration-500 ease-in-out hover:scale-110 md:h-16"
         height={40}
         width={40}
