@@ -390,7 +390,7 @@ export const INSTITUTIONS: Record<string, Institution> = {
 export interface IBASE_MEMBER_INFO {
   name: string
   image: string
-  institution: INSTITUTION
+  institution: Institution
   yearStanding: string
   programName: string
 }
