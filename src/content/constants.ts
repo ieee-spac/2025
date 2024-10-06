@@ -51,7 +51,7 @@ export const HEADER = {
   NAV_LINKS: [
     { name: 'Home', path: '#home' },
     { name: 'About', path: '#about' },
-    { name: 'Patronage', path: '#patronage' },
+    { name: 'Patrons', path: '#patrons' },
     { name: 'Team', path: '#team' },
     { name: 'Contact', path: '#contact' },
   ],
@@ -289,7 +289,7 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
 
 export const PATRONS = {
   TITLE: 'Our Patrons',
-  ID: 'patronage',
+  ID: 'patrons',
 }
 
 export const CONTACT_FORM = {
