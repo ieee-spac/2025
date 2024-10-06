@@ -97,6 +97,7 @@ export function About() {
             isReversed={index % 2 !== 0}
           />
         ))}
+        <p>{ABOUT.PARAGRAPHS[3]}</p>
       </section>
       <div className="flex flex-wrap lg:flex-nowrap md:text-nowrap w-full justify-center gap-2">
         <a
