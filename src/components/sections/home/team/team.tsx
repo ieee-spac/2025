@@ -43,6 +43,34 @@ export function Team() {
                         />
                       </div>
                     )}
+
+                    {/* YEAR STANDING */}
+                    {member.yearStanding && (
+                      <div className="absolute bottom-0 right-0 transform translate-x-[10%] translate-y-[10%] flex items-center text-sm">
+                        <span
+                          className={`
+              ${
+                      member.yearStanding.startsWith('1')
+                        ? 'text-primary'
+                        : member.yearStanding.startsWith('2')
+                          ? 'text-green-500'
+                          : member.yearStanding.startsWith('3')
+                            ? 'text-yellow-600 dark:text-yellow-400'
+                            : member.yearStanding.startsWith('4')
+                              ? 'text-warning'
+                              : 'text-purple-400'
+                      }
+              font-bold
+            `}
+                        >
+                          {/* Split the number and suffix */}
+                          {member.yearStanding.slice(0, -2)}
+                          <sup>
+                            {member.yearStanding.slice(-2)}
+                          </sup>
+                        </span>
+                      </div>
+                    )}
                   </div>
                 </div>
 
@@ -53,10 +81,6 @@ export function Team() {
 
                 {/* PROGRAM */}
                 <p className="text-center text-sm">
-                  {member.yearStanding}
-                  {' '}
-                  -
-                  {' '}
                   {member.programName}
                 </p>
 
