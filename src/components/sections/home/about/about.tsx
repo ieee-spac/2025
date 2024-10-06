@@ -3,87 +3,10 @@
 import Image from 'next/image'
 // import CountUp from 'react-countup'
 
-/* import exclusive_masterclass_image from '@root/public/assets/exclusive_masterclass_image.svg'
- * import networking_booths_image from '@root/public/assets/networking_booths_image.svg'
- * import presentation_section_image from '@root/public/assets/presentation_section_image.svg'
- * import professional_1_on_1_image from '@root/public/assets/professional_1_on_1_image.svg'
- * import workshops_image from '@root/public/assets/workshops_image.svg' */
 import { Bubble } from '@/components/sections/home/about/bubble'
 import { ShinyButton } from '@/components/twilight/shiny-button/shiny-button'
 
 import { ABOUT, LINKS } from '@/content/constants'
-
-// Data for "A typical SPAC" section Items
-/* const sections = [
- *   {
- *     title: 'Presentation Section',
- *     description:
- *       'A dynamic opening with key speakers introducing the event\'s themes and goals.',
- *     imgSrc: presentation_section_image,
- *     imgAlt: 'Presentation',
- *   },
- *   {
- *     title: 'Professional 1:1',
- *     description:
- *       'Engage in personalized discussions with industry professionals tailored to your career interests.',
- *     imgSrc: professional_1_on_1_image,
- *     imgAlt: 'Professional Conversation',
- *   },
- *   {
- *     title: 'Exclusive Masterclass',
- *     description:
- *       'Interactive sessions with experts to deepen your knowledge and enhance your skills.',
- *     imgSrc: exclusive_masterclass_image,
- *     imgAlt: 'Masterclass',
- *   },
- *   {
- *     title: 'Workshops',
- *     description:
- *       'Hands-on workshops designed to showcase practical skills and industry insights.',
- *     imgSrc: workshops_image,
- *     imgAlt: 'Workshops',
- *   },
- *   {
- *     title: 'Networking Booths',
- *     description:
- *       'Explore potential career paths and company cultures directly from the insiders.',
- *     imgSrc: networking_booths_image,
- *     imgAlt: 'Networking',
- *   },
- * ] */
-
-// Data for the stat bubbles
-/* const statData: { className: string, number: number, label: string, color: [string, string], size: string }[] = [
- *   {
- *     className: 'bobbing-animation-1 aspect-square relative flex flex-start',
- *     number: 100,
- *     label: 'Companies',
- *     color: ['#FFD100', '#DE9403'],
- *     size: '90%',
- *   },
- *   {
- *     className: 'bobbing-animation-4 aspect-square self-end relative -bottom-4 -left-1 sm:bottom-0 sm:left-0',
- *     number: 300,
- *     label: 'Attendees',
- *     color: ['#03A6DE', '#027AB3'],
- *     size: '65%',
- *   },
- *   {
- *     className: 'bobbing-animation-2 aspect-square relative -left-10 sm:-left-10',
- *     number: 200,
- *     label: 'Students',
- *     color: ['#77DD77', '#03A63C'],
- *     size: '50%',
- *   },
- *
- *   {
- *     className: 'bobbing-animation-3 aspect-square self-end relative -left-14 sm:-left-20 bottom-[20%]',
- *     number: 9,
- *     label: 'Years',
- *     color: ['#FFA500', '#DE6003'],
- *     size: '40%',
- *   },
- * ] */
 
 // Render events in the "A typical SPAC" section
 function SectionItem({
@@ -145,7 +68,7 @@ export function About() {
         <p>{ABOUT.PARAGRAPHS[1]}</p>
 
         {/* Colour Bubbles */}
-        <div className="flex w-full h-[45vw] max-h-80 ml-6 md:ml-10">
+        <div className="flex w-full h-[45vw] max-h-80 md:ml-10">
           {ABOUT.STAT_BUBBLES.map((item, index) => (
             <Bubble
               key={index}
