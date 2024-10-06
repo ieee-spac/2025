@@ -1,68 +1,24 @@
 import Link from 'next/link'
-import { FaFacebookF, FaFigma, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa6'
-import { SiChromatic, SiStorybook } from 'react-icons/si'
 import Image from 'next/image'
-import ieee_spac_logo_combined_horizontal from '@root/public/assets/ieee_spac_logo_combined_horizontal.svg'
 import { cn } from '@/components/utils/cn'
+
+import { FOOTER } from '@/content/constants'
 
 function DEFAULT_LOGO_IMAGE() {
   return (
     <Image
-      src={ieee_spac_logo_combined_horizontal}
+      src={FOOTER.LOGO}
       alt="IEEE SPAC Footer Logo"
       className="h-6 w-auto transition-all duration-700 hover:scale-105"
+      width={0}
+      height={0}
     />
   )
 }
 
-const DEFAULT_SOCIAL_MEDIA_ICONS_LIST = [
-  {
-    name: 'Instagram',
-    url: 'https://www.instagram.com/ieeespac/?hl=en',
-    Icon: FaInstagram,
-    className: 'text-rose-500',
-  },
-  {
-    name: 'LinkedIn',
-    url: 'https://www.linkedin.com/company/ieeespac/',
-    Icon: FaLinkedinIn,
-    className: 'text-sky-700',
-  },
-  {
-    name: 'Facebook',
-    url: 'https://www.facebook.com/ieeespacottawa/',
-    Icon: FaFacebookF,
-    className: 'text-blue-600',
-  },
-  {
-    name: 'GitHub',
-    url: 'https://github.com/ieee-spac/2024',
-    Icon: FaGithub,
-    className: 'text-green-500',
-  },
-  {
-    name: 'Figma',
-    url: 'https://www.figma.com/community/file/1417704325784085062/ieee-spac-2024-twilight-design-system',
-    Icon: FaFigma,
-    className: 'text-indigo-400',
-  },
-  {
-    name: 'Storybook',
-    url: 'https://main--665264891b6bc70eded9109a.chromatic.com',
-    Icon: SiStorybook,
-    className: 'text-pink-500',
-  },
-  {
-    name: 'Chromatic',
-    url: 'https://www.chromatic.com/library?appId=665264891b6bc70eded9109a&branch=main',
-    Icon: SiChromatic,
-    className: 'text-orange-600',
-  },
-]
-
 export function Footer({
   Logo = DEFAULT_LOGO_IMAGE,
-  socialMediaData = DEFAULT_SOCIAL_MEDIA_ICONS_LIST,
+  socialMediaData = FOOTER.SOCIAL_MEDIA,
 }: {
   Logo?: React.ComponentType
   socialMediaData?: {
@@ -83,7 +39,7 @@ export function Footer({
             <Link href="/" className="scroll-smooth">
               <Logo />
             </Link>
-            <p>Copyright © 2024 IEEE - All rights reserved.</p>
+            <p>{FOOTER.COPYRIGHT_TEXT}</p>
           </aside>
 
           {/* SOCIAL MEDIA ICONS */}

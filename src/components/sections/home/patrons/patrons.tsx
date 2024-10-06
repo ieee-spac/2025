@@ -1,48 +1,32 @@
 'use client'
-import { patronsData } from '@/components/sections/home/patrons/patrons.data'
 import { ShinyButton } from '@/components/twilight/shiny-button/shiny-button'
 import { LogoSection } from '@/components/sections/home/patrons/patrons-tier'
 import { Spotlight } from '@/components/twilight/spotlight/spotlight'
 
-const LINK_PATRONAGE_PACKAGE = 'https://drive.google.com/file/d/1wfvpv5T8Xg-cmt5kmps9Gzlddq9_Cdc0/view?usp=sharing'
+import { LINKS, PATRONS, PATRONS_DATA, TIER_NAME, TIER_PROPERTIES } from '@/content/constants'
 
 export function Patrons() {
   return (
-    <div id="patronage" className="mx-auto mt-20 max-w-3xl px-3 md:px-8">
-      <h2 className="mb-10 text-5xl font-bold text-primary sm:text-6xl">
-        Our Patrons
-      </h2>
+    <div id={PATRONS.ID} className="mx-auto mt-20 max-w-3xl px-3 md:px-8">
+      <h2 className="mb-10 text-5xl font-bold text-primary sm:text-6xl">{PATRONS.TITLE}</h2>
       <Spotlight
         className="-left-20 top-[150rem] md:left-10 md:top-[140rem]"
         fill="LightGoldenRodYellow"
       />
-      <LogoSection
-        title="Platinum"
-        titleColor="text-warning"
-        logos={patronsData.platinum}
-        gradientClass="from-warning to-background"
-      />
-      <LogoSection
-        title="Gold"
-        titleColor="text-tertiary"
-        logos={patronsData.gold}
-        gradientClass="from-tertiary to-background"
-      />
-      <LogoSection
-        title="Silver"
-        titleColor="text-slate-400"
-        logos={patronsData.silver}
-        gradientClass="from-slate-400 to-background"
-      />
-      <LogoSection
-        title="Bronze"
-        titleColor="text-amber-800"
-        logos={patronsData.bronze}
-        gradientClass="from-amber-800 to-background"
-      />
+      <>
+        {Object.values(TIER_NAME).map(tier => (
+          <LogoSection
+            key={tier}
+            title={tier}
+            titleColor={TIER_PROPERTIES[tier].titleColor}
+            logos={PATRONS_DATA[tier]}
+            gradientClass={TIER_PROPERTIES[tier].gradientClass}
+          />
+        ))}
+      </>
       <span className="inline-flex w-full justify-center">
         <a
-          href={LINK_PATRONAGE_PACKAGE}
+          href={LINKS.PATRONAGE_PACKAGE}
           target="_blank"
           rel="noopener noreferrer"
         >

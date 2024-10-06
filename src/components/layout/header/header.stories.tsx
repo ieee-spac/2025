@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Header } from '@/components/layout/header/header'
 import { links } from '@/components/layout/header/links'
 
-const logo = '/assets/ieee_spac_logo_vertical_no_year.svg'
+const logo = '/assets/twilight-design-system/ieee_spac_logo_vertical_no_year.svg'
 
 const meta = {
   title: 'Website/Layout/Header',

@@ -2,7 +2,9 @@ import type { Meta, StoryObj } from '@storybook/react'
 
 import { HeaderLogo } from '@/components/layout/header/header-logo'
 
-const logo = '/assets/ieee_spac_logo_vertical_no_year.svg'
+import { HEADER } from '@/content/constants'
+
+const logo = HEADER.IMAGE_URL
 
 const meta = {
   title: 'website/layout/Header/HeaderLogo',

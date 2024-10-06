@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { About } from './about'
+import { About } from '@/components/sections/home/about/about'
 
 const meta = {
   title: 'Website/Sections/About',

@@ -27,18 +27,20 @@ import {
   FormMessage,
 } from '@/components/ui/form'
 
+import { CONTACT_FORM } from '@/content/constants'
+
 const formSchema = z.object({
   fullName: z.string().trim().min(1, {
-    message: 'To whom do we speak to? :/',
+    message: `${CONTACT_FORM.FIELDS.NAME.errorMessage}`,
   }).max(255),
   email: z.string().trim().email({
-    message: 'Without a valid email, how are we going to send you our newsletter full of cat memes? :/',
+    message: `${CONTACT_FORM.FIELDS.EMAIL.errorMessage}`,
   }).max(255),
   subject: z.string().trim().min(1, {
-    message: 'A subject helps us pretend we\'re organized. :/ ',
+    message: `${CONTACT_FORM.FIELDS.SUBJECT.errorMessage}`,
   }).max(255),
   message: z.string().trim().min(1, {
-    message: 'A message without content is like a sandwich without filling. :/',
+    message: `${CONTACT_FORM.FIELDS.MESSAGE.errorMessage}`,
   }).max(255),
 })
 
@@ -90,14 +92,14 @@ export function Contact() {
       id="contact"
       className="overflow-none mx-auto my-20 max-w-3xl space-y-10 px-3 md:px-8 "
     >
-      <h3 className="text-5xl font-bold text-primary sm:text-6xl">Contact</h3>
+      <h3 className="text-5xl font-bold text-primary sm:text-6xl">{CONTACT_FORM.TITLE}</h3>
       <Card className="transition-all duration-700 ease-in-out hover:drop-shadow-[0_0px_5px_rgba(0,202,255,1)]">
         <CardHeader>
-          <CardTitle className="font-bold text-xl text-neutral-800 dark:text-neutral-200">Get in Touch</CardTitle>
+          <CardTitle className="font-bold text-xl text-neutral-800 dark:text-neutral-200">{CONTACT_FORM.SUBTITLE}</CardTitle>
           <CardDescription
             className="text-neutral-600 text-sm mt-2 dark:text-neutral-300"
           >
-            Questions or feedback? Drop us a message, and we'll get back to you soon.
+            {CONTACT_FORM.DESCRIPTION}
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -112,9 +114,9 @@ export function Contact() {
                   name="fullName"
                   render={({ field }) => (
                     <FormItem className="w-full">
-                      <FormLabel>Full Name</FormLabel>
+                      <FormLabel>{CONTACT_FORM.FIELDS.NAME.label}</FormLabel>
                       <FormControl>
-                        <Input placeholder="Your Full Name*" {...field} />
+                        <Input placeholder={CONTACT_FORM.FIELDS.NAME.placeholder} {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -125,9 +127,9 @@ export function Contact() {
                   name="email"
                   render={({ field }) => (
                     <FormItem className="w-full">
-                      <FormLabel>Email</FormLabel>
+                      <FormLabel>{CONTACT_FORM.FIELDS.EMAIL.label}</FormLabel>
                       <FormControl>
-                        <Input placeholder="Your Email*" {...field} />
+                        <Input placeholder={CONTACT_FORM.FIELDS.EMAIL.placeholder} {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -140,9 +142,9 @@ export function Contact() {
                 name="subject"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Subject</FormLabel>
+                    <FormLabel>{CONTACT_FORM.FIELDS.SUBJECT.label}</FormLabel>
                     <FormControl>
-                      <Input placeholder="Subject*" {...field} />
+                      <Input placeholder={CONTACT_FORM.FIELDS.SUBJECT.placeholder} {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -154,9 +156,9 @@ export function Contact() {
                 name="message"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Message</FormLabel>
+                    <FormLabel>{CONTACT_FORM.FIELDS.MESSAGE.label}</FormLabel>
                     <FormControl>
-                      <Textarea placeholder="Your Message*" {...field} />
+                      <Textarea placeholder={CONTACT_FORM.FIELDS.MESSAGE.placeholder} {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -173,7 +175,7 @@ export function Contact() {
             disabled={isSubmitting}
           >
             {isSubmitting ? <Loader2 className="animate-spin mr-2 size-4" /> : <EnvelopeOpenIcon className="mr-2 size-4" />}
-            {isSubmitting ? 'Sending...' : 'Submit'}
+            {isSubmitting ? 'Sending...' : `${CONTACT_FORM.SUBMIT_BUTTON_TEXT}`}
           </Button>
         </CardFooter>
       </Card>
