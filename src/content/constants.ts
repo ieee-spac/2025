@@ -363,23 +363,28 @@ export const FOOTER = {
   ],
 }
 
-// --- Define Institution Enum ---
-export enum INSTITUTION {
-  UNIVERSITY_OF_OTTAWA = 'University of Ottawa', // https://www.uottawa.ca/en
-  ALGONQUIN_COLLEGE = 'Algonquin College', // https://www.algonquincollege.com
-  CARLETON_UNIVERSITY = 'Carleton University', // https://carleton.ca
+interface Institution {
+  name: string
+  imageUrl: string
+  url: string
 }
 
-export enum ROLE {
-  LEAD = 'Lead',
-  TREASURER = 'Treasurer',
-  PATRONAGE_LEAD = 'Patronage Lead',
-  PATRONAGE_TEAM_MEMBER = 'Patronage Team Member',
-  LOGISTICS_LEAD = 'Logistics Lead',
-  MARKETING_LEAD = 'Marketing Lead',
-  MARKETING_TEAM_MEMBER = 'Marketing Team Member',
-  UI_UX_DESIGNER = 'UI/UX Designer',
-  WEB_DEVELOPER = 'Web Developer',
+export const INSTITUTIONS: Record<string, Institution> = {
+  UNIVERSITY_OF_OTTAWA: {
+    name: 'University of Ottawa',
+    imageUrl: '/assets/institution-logos/university_of_ottawa.svg',
+    url: 'https://www.uottawa.ca/en',
+  },
+  ALGONQUIN_COLLEGE: {
+    name: 'Algonquin College',
+    imageUrl: '/assets/institution-logos/algonquin_college.svg',
+    url: 'https://www.algonquincollege.com',
+  },
+  CARLETON_UNIVERSITY: {
+    name: 'Carleton University',
+    imageUrl: '/assets/institution-logos/carleton_university.svg',
+    url: 'https://carleton.ca',
+  },
 }
 
 export interface IBASE_MEMBER_INFO {
@@ -398,6 +403,18 @@ export interface ICONTACT_INFO {
   instagram?: string
 }
 
+export enum ROLE {
+  LEAD = 'Lead',
+  TREASURER = 'Treasurer',
+  PATRONAGE_LEAD = 'Patronage Lead',
+  PATRONAGE_TEAM_MEMBER = 'Patronage',
+  LOGISTICS_LEAD = 'Logistics Lead',
+  MARKETING_LEAD = 'Marketing Lead',
+  MARKETING_TEAM_MEMBER = 'Marketing',
+  UI_UX_DESIGNER = 'Graphic Design',
+  DEVELOPMENT = 'Development',
+}
+
 export interface ITEAM_MEMBER extends IBASE_MEMBER_INFO, ICONTACT_INFO {
   role: ROLE
   email?: string
@@ -412,86 +429,151 @@ export const ROLE_EMAIL_MAP: Record<ROLE, string> = {
   [ROLE.MARKETING_LEAD]: 'marketing@ieeespac.ca',
   [ROLE.MARKETING_TEAM_MEMBER]: 'marketing@ieeespac.ca',
   [ROLE.UI_UX_DESIGNER]: '',
-  [ROLE.WEB_DEVELOPER]: 'development@ieeespac.ca',
+  [ROLE.DEVELOPMENT]: 'development@ieeespac.ca',
 }
 
 export const TEAM_MEMBERS: ITEAM_MEMBER[] = [
   {
     name: 'Dania Mahmoud',
-    image: '/assets/team/dania_mahmoud.jpg',
-    institution: INSTITUTION.CARLETON_UNIVERSITY,
+    image: '/assets/team-member-headshots/dania_mahmoud.png',
+    institution: INSTITUTIONS.CARLETON_UNIVERSITY,
     role: ROLE.LEAD,
     yearStanding: '3rd Year',
     programName: 'Computer Systems Engineering',
     email: ROLE_EMAIL_MAP[ROLE.LEAD],
-    linkedin: 'https://linkedin.com/in/dania',
+    linkedin: 'https://www.linkedin.com/in/dania-mahmoud-038880227/',
     github: '',
     website: '',
     instagram: '',
   },
   {
     name: 'Cyrus Choi',
-    image: '/assets/team/cyrus_choi.jpg',
-    institution: INSTITUTION.CARLETON_UNIVERSITY,
+    image: '/assets/team-member-headshots/cyrus_choi.png',
+    institution: INSTITUTIONS.UNIVERSITY_OF_OTTAWA,
     role: ROLE.TREASURER,
     yearStanding: '2nd Year',
     programName: 'Electrical Engineering & Computing Technology',
     email: ROLE_EMAIL_MAP[ROLE.TREASURER],
-    linkedin: '',
-    github: 'https://github.com/cyruschoi',
+    linkedin: 'https://www.linkedin.com/in/cyrus-choi/',
+    github: '',
+    website: '',
+    instagram: '',
+  },
+  {
+    name: 'Yousef Hammad',
+    image: '/assets/team-member-headshots/yousef_hammad.png',
+    institution: INSTITUTIONS.CARLETON_UNIVERSITY,
+    role: ROLE.LOGISTICS_LEAD,
+    yearStanding: '4th Year',
+    programName: 'Computer Systems Engineering',
+    email: ROLE_EMAIL_MAP[ROLE.LOGISTICS_LEAD],
+    linkedin: 'https://www.linkedin.com/in/yousef-hammad24/',
+    github: '',
     website: '',
     instagram: '',
   },
   {
     name: 'Farah El Siss',
-    image: '/assets/team/farah_el_siss.jpg',
-    institution: INSTITUTION.UNIVERSITY_OF_OTTAWA,
+    image: '/assets/team-member-headshots/farah_el_siss.png',
+    institution: INSTITUTIONS.UNIVERSITY_OF_OTTAWA,
     role: ROLE.PATRONAGE_LEAD,
     yearStanding: '5th Year',
     programName: 'Biomedical Mechanical Engineering & Computing Technology',
     email: ROLE_EMAIL_MAP[ROLE.PATRONAGE_LEAD],
-    linkedin: 'https://linkedin.com/in/farah',
+    linkedin: 'https://www.linkedin.com/in/farahelsiss/',
     github: '',
     website: '',
-    instagram: 'https://instagram.com/farah',
+    instagram: '',
   },
   {
-    name: 'Yousef Hammad',
-    image: '/assets/team/yousef_hammad.jpg',
-    institution: INSTITUTION.CARLETON_UNIVERSITY,
-    role: ROLE.LOGISTICS_LEAD,
+    name: 'Lubna Aboshaeir',
+    image: '/assets/team-member-headshots/lubna_aboshaeir.png',
+    institution: INSTITUTIONS.CARLETON_UNIVERSITY,
+    role: ROLE.PATRONAGE_LEAD,
+    yearStanding: '5th Year',
+    programName: 'Architecture Conservation & Sustainability Engineering',
+    email: ROLE_EMAIL_MAP[ROLE.PATRONAGE_LEAD],
+    linkedin: 'https://www.linkedin.com/in/lubna-aboshaeir-b9744a22a/',
+    github: '',
+    website: '',
+    instagram: '',
+  },
+  {
+    name: 'Zaina Karaki',
+    image: '/assets/team-member-headshots/zaina_karaki.png',
+    institution: INSTITUTIONS.CARLETON_UNIVERSITY,
+    role: ROLE.PATRONAGE_TEAM_MEMBER,
+    yearStanding: '2nd Year',
+    programName: 'Biomedical and Mechanical Engineering',
+    email: ROLE_EMAIL_MAP[ROLE.PATRONAGE_TEAM_MEMBER],
+    linkedin: 'https://www.linkedin.com/in/zaina-karaki-440149203/',
+    github: '',
+    website: '',
+    instagram: '',
+  },
+  {
+    name: 'Hamnah Qureshi',
+    image: '/assets/team-member-headshots/hamnah_qureshi.png',
+    institution: INSTITUTIONS.CARLETON_UNIVERSITY,
+    role: ROLE.MARKETING_LEAD,
+    yearStanding: '3rd Year',
+    programName: 'Computer Systems Engineering',
+    email: '',
+    linkedin: 'https://www.linkedin.com/in/hamnah-qureshi-5a17151b6/',
+    github: '',
+    website: '',
+    instagram: '',
+  },
+  {
+    name: 'Hetarthi Soni',
+    image: '/assets/team-member-headshots/hetarthi_soni.png',
+    institution: INSTITUTIONS.CARLETON_UNIVERSITY,
+    role: ROLE.MARKETING_TEAM_MEMBER,
     yearStanding: '4th Year',
     programName: 'Computer Systems Engineering',
-    email: ROLE_EMAIL_MAP[ROLE.LOGISTICS_LEAD],
-    linkedin: 'https://linkedin.com/in/yousef',
+    email: '',
+    linkedin: 'https://www.linkedin.com/in/hetarthi-soni-9001551b7/',
+    github: '',
+    website: '',
+    instagram: '',
+  },
+  {
+    name: 'Reem Srour',
+    image: '/assets/team-member-headshots/reem_srour.png',
+    institution: INSTITUTIONS.CARLETON_UNIVERSITY,
+    role: ROLE.MARKETING_TEAM_MEMBER,
+    yearStanding: '4th Year',
+    programName: 'Civil Engineering',
+    email: '',
+    linkedin: 'https://www.linkedin.com/in/reem-srour-48a2091b7/',
     github: '',
     website: '',
     instagram: '',
   },
   {
     name: 'Victor Li',
-    image: '/assets/team/victor_li.jpg',
-    institution: INSTITUTION.CARLETON_UNIVERSITY,
+    image: '/assets/team-member-headshots/victor_li.png',
+    institution: INSTITUTIONS.CARLETON_UNIVERSITY,
     role: ROLE.UI_UX_DESIGNER,
     yearStanding: '4th Year',
     programName: 'Computer Science - Minor in Math',
     email: '',
-    linkedin: '',
+    linkedin: 'https://www.linkedin.com/in/victorli5611/',
     github: '',
     website: '',
     instagram: '',
   },
   {
     name: 'Mumtahin Farabi',
-    image: '/assets/team/mumtahin_farabi.jpg',
-    institution: INSTITUTION.CARLETON_UNIVERSITY,
-    role: ROLE.WEB_DEVELOPER,
+    image: '/assets/team-member-headshots/mumtahin_farabi.png',
+    institution: INSTITUTIONS.CARLETON_UNIVERSITY,
+    role: ROLE.DEVELOPMENT,
     yearStanding: '2nd Year',
     programName: 'Computer Science - Minor in Business',
-    email: ROLE_EMAIL_MAP[ROLE.WEB_DEVELOPER],
-    linkedin: '',
+    email: ROLE_EMAIL_MAP[ROLE.DEVELOPMENT],
+    linkedin: 'https://www.linkedin.com/in/mfarabi/',
     github: 'https://github.com/mfarabi619',
-    website: '',
+    website: 'https://mfarabi.dev',
     instagram: '',
   },
 ]
