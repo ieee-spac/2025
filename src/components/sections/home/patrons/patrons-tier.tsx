@@ -29,7 +29,7 @@ export function LogoSection({
       <span
         className={`block bg-gradient-to-r ${gradientClass} mb-4 p-[0.5px]`}
       />
-      <div className="mb-8 flex flex-wrap items-end justify-around items-center">
+      <div className="mb-8 flex flex-wrap justify-around items-center">
         {logos
         && logos.map(logo => (
           <a
