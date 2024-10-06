@@ -52,6 +52,7 @@ export const HEADER = {
     { name: 'Home', path: '#home' },
     { name: 'About', path: '#about' },
     { name: 'Patronage', path: '#patronage' },
+    { name: 'Team', path: '#team' },
     { name: 'Contact', path: '#contact' },
   ],
 }
@@ -200,6 +201,20 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       url: 'https://www.ericsson.com/en/about-us/company-facts/ericsson-worldwide/canada',
       overrides: 'w-1/4 bobbing-animation-2',
     },
+    {
+      light: '/assets/patron-logos/eef_uottawa_logo_light.svg',
+      dark: '/assets/patron-logos/eef_uottawa_logo_dark.svg',
+      alt: 'EEF uOttawa logo',
+      url: 'https://www.uottawa.ca/faculty-engineering/student-experience/funding-student-initiatives',
+      overrides: 'w-1/2 bobbing-animation-2',
+    },
+    {
+      light: '/assets/patron-logos/ieee_uottawa_logo_light.svg',
+      dark: '/assets/patron-logos/ieee_uottawa_logo_dark.svg',
+      alt: 'uOttawa IEEE Logo',
+      url: 'https://ieeeuottawa.ca',
+      overrides: 'w-1/4 bobbing-animation-2',
+    },
   ],
   [TIER_NAME.SILVER]: [
     {
@@ -221,7 +236,7 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       dark: '/assets/patron-logos/cse_logo_dark.png',
       alt: 'CSE Logo',
       url: 'https://www.cse-cst.gc.ca',
-      overrides: 'w-1/3 bobbing-animation-3',
+      overrides: 'w-1/2 bobbing-animation-3',
     },
     {
       light: '/assets/patron-logos/ised_logo_light.svg',
@@ -244,20 +259,6 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       url: 'https://www.cbsa-asfc.gc.ca/menu-eng.html',
       overrides: 'w-1/4 bobbing-animation-3',
     },
-    {
-      light: '/assets/patron-logos/eef_uottawa_logo_light.svg',
-      dark: '/assets/patron-logos/eef_uottawa_logo_dark.svg',
-      alt: 'EEF uOttawa logo',
-      url: 'https://www.uottawa.ca/faculty-engineering/student-experience/funding-student-initiatives',
-      overrides: 'w-1/2 bobbing-animation-3',
-    },
-    {
-      light: '/assets/patron-logos/ieee_uottawa_logo_light.svg',
-      dark: '/assets/patron-logos/ieee_uottawa_logo_dark.svg',
-      alt: 'uOttawa IEEE Logo',
-      url: 'https://ieeeuottawa.ca',
-      overrides: 'w-1/4 bobbing-animation-3',
-    },
   ],
   [TIER_NAME.BRONZE]: [
     {
@@ -274,6 +275,14 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       url: 'https://solace.com',
       overrides: 'w-1/4 bobbing-animation-4',
     },
+    {
+      light: '/assets/patron-logos/ottawa_international_airport_logo_light.svg',
+      dark: '/assets/patron-logos/ottawa_international_airport_logo_dark.svg',
+      alt: 'Ottawa International Airport logo',
+      url: 'https://www.yow.ca',
+      overrides: 'w-1/4 bobbing-animation-4',
+    },
+
   ],
 }
 
