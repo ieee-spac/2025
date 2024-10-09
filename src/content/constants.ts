@@ -26,8 +26,10 @@ export const LINKS = {
   FACEBOOK: 'https://www.facebook.com/ieeespacottawa/',
   GITHUB: 'https://github.com/ieee-spac/2024',
   STORYBOOK: 'https://main--665264891b6bc70eded9109a.chromatic.com',
-  FIGMA: 'https://www.figma.com/community/file/1417704325784085062/ieee-spac-2024-twilight-design-system',
-  CHROMATIC: 'https://www.chromatic.com/library?appId=665264891b6bc70eded9109a&branch=main',
+  FIGMA:
+    'https://www.figma.com/community/file/1417704325784085062/ieee-spac-2024-twilight-design-system',
+  CHROMATIC:
+    'https://www.chromatic.com/library?appId=665264891b6bc70eded9109a&branch=main',
 }
 
 export const SHINY_BUTTONS = [
@@ -47,7 +49,8 @@ export const SHINY_BUTTONS = [
 
 // -----------------  HEADER ------------------
 export const HEADER = {
-  IMAGE_URL: '/assets/twilight-design-system/ieee_spac_logo_vertical_no_year.svg',
+  IMAGE_URL:
+    '/assets/twilight-design-system/ieee_spac_logo_vertical_no_year.svg',
   NAV_LINKS: [
     { name: 'Home', path: '#home' },
     { name: 'About', path: '#about' },
@@ -87,21 +90,24 @@ export const ABOUT = {
     {
       number: 300,
       label: 'Attendees',
-      className: 'bobbing-animation-4 aspect-square self-end relative -bottom-4 -left-1 sm:bottom-0 sm:left-0',
+      className:
+        'bobbing-animation-4 aspect-square self-end relative -bottom-4 -left-1 sm:bottom-0 sm:left-0',
       color: ['#03A6DE', '#027AB3'],
       size: '65%',
     },
     {
       number: 200,
       label: 'Students',
-      className: 'bobbing-animation-2 aspect-square relative -left-10 sm:-left-10',
+      className:
+        'bobbing-animation-2 aspect-square relative -left-10 sm:-left-10',
       color: ['#77DD77', '#03A63C'],
       size: '50%',
     },
     {
       number: 9,
       label: 'Years',
-      className: 'bobbing-animation-3 aspect-square self-end relative -left-14 sm:-left-20 bottom-[20%]',
+      className:
+        'bobbing-animation-3 aspect-square self-end relative -left-14 sm:-left-20 bottom-[20%]',
       color: ['#FFA500', '#DE6003'],
       size: '40%',
     },
@@ -233,6 +239,13 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       overrides: 'w-1/3 bobbing-animation-3',
     },
     {
+      light: '/assets/patron-logos/nordion_logo_light.svg',
+      dark: '/assets/patron-logos/nordion_logo_dark.svg',
+      alt: 'Nordion Logo',
+      url: 'https://www.nordion.com',
+      overrides: 'w-1/3 bobbing-animation-3',
+    },
+    {
       light: '/assets/patron-logos/cse_logo_light.png',
       dark: '/assets/patron-logos/cse_logo_dark.png',
       alt: 'CSE Logo',
@@ -283,7 +296,6 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       url: 'https://www.yow.ca',
       overrides: 'w-1/4 bobbing-animation-4',
     },
-
   ],
 }
 
