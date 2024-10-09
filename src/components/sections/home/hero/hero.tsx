@@ -61,15 +61,6 @@ export function Hero() {
           />
           <div className="flex flex-wrap lg:flex-nowrap md:text-nowrap w-full justify-center gap-2">
             <a
-              href={LINKS.PATRONAGE_PACKAGE}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <ShinyButton
-                text="Become a Patron"
-              />
-            </a>
-            <a
               href={LINKS.SPAC_TICKETS}
               target="_blank"
               rel="noopener noreferrer"
