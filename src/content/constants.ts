@@ -54,7 +54,7 @@ export const HEADER = {
   IMAGE_URL:
     '/assets/twilight-design-system/ieee_spac_logo_vertical_no_year.svg',
   NAV_LINKS: [
-    { name: 'Home', path: '#home' },
+    // { name: 'Home', path: '#home' },
     { name: 'About', path: '#about' },
     { name: 'Patrons', path: '#patrons' },
     { name: 'Agenda', path: '#agenda' },
