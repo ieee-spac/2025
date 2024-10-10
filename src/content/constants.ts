@@ -20,6 +20,8 @@ export const LINKS = {
     'https://drive.google.com/file/d/1wfvpv5T8Xg-cmt5kmps9Gzlddq9_Cdc0/view?usp=sharing',
   SPAC_TICKETS: 'https://events.vtools.ieee.org/m/436955',
   SPAC_PLUS_AGM_TICKETS: 'https://events.vtools.ieee.org/m/435598',
+  AGENDA:
+    'https://www.canva.com/design/DAGTJGf_Nh0/R3T3kFHxLV0lEa26p1s9oQ/view?embed',
   LOCATION: 'https://maps.app.goo.gl/wk5vdFH7StaCvsJf7',
   INSTAGRAM: 'https://www.instagram.com/ieeespac/?hl=en',
   LINKEDIN: 'https://www.linkedin.com/company/ieeespac/',
@@ -55,6 +57,7 @@ export const HEADER = {
     { name: 'Home', path: '#home' },
     { name: 'About', path: '#about' },
     { name: 'Patrons', path: '#patrons' },
+    { name: 'Agenda', path: '#agenda' },
     { name: 'Team', path: '#team' },
     { name: 'Contact', path: '#contact' },
   ],
