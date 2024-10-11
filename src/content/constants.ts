@@ -590,7 +590,7 @@ export const TEAM_MEMBERS: ITEAM_MEMBER[] = [
   },
   {
     name: 'Mumtahin Farabi',
-    image: '/assets/team-member-headshots/mumtahin_farabi.png',
+    image: '/assets/team-member-headshots/mumtahin_farabi.jpeg',
     institution: INSTITUTIONS.CARLETON_UNIVERSITY,
     role: ROLE.DEVELOPMENT,
     yearStanding: '2nd',
