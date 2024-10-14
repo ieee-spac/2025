@@ -204,13 +204,14 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
     },
   ],
   [TIER_NAME.GOLD]: [
-    {
-      light: '/assets/patron-logos/ericsson_logo.svg',
-      dark: '/assets/patron-logos/ericsson_logo.svg',
-      alt: 'Ericsson logo',
-      url: 'https://www.ericsson.com/en/about-us/company-facts/ericsson-worldwide/canada',
-      overrides: 'w-1/4 bobbing-animation-2',
-    },
+    // Commented out due to Ericsson no longer being able to sponsor SPAC
+    // {
+    //   light: '/assets/patron-logos/ericsson_logo.svg',
+    //   dark: '/assets/patron-logos/ericsson_logo.svg',
+    //   alt: 'Ericsson logo',
+    //   url: 'https://www.ericsson.com/en/about-us/company-facts/ericsson-worldwide/canada',
+    //   overrides: 'w-1/4 bobbing-animation-2',
+    // },
     {
       light: '/assets/patron-logos/eef_uottawa_logo_light.svg',
       dark: '/assets/patron-logos/eef_uottawa_logo_dark.svg',
