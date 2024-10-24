@@ -80,7 +80,6 @@ export const ABOUT = {
     'The IEEE Student Professional Awareness Conference (SPAC) is a formal networking event & dinner that serves esteemed professionals and allows them to engage with engineering and computer science students within their fields.',
     'SPAC provides students, academics, and industry professionals an opportunity to network and bridge the gap between classrooms and boardrooms, thereby empowering attendees to build professional connections and form a bond.',
     'First hosted in 1979, SPAC has manifested itself as an event where future professionals receive exposure to the world of employment which complements their ongoing studies.',
-    'Upon ticket registration, all attendees will get an email to upload their resume to be sent to our Platinum Sponsor, Blackberry QNX!',
   ],
   STAT_BUBBLES: [
     {
@@ -233,6 +232,20 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       url: 'https://ieeeuottawa.ca',
       overrides: 'w-1/4 bobbing-animation-2',
     },
+    {
+      light: '/assets/patron-logos/ieee_life_members_affinity_groups_logo.png',
+      dark: '/assets/patron-logos/ieee_life_members_affinity_groups_logo.png',
+      alt: 'IEEE Life Members Affinity Groups Logo',
+      url: 'https://life.ieee.org',
+      overrides: 'w-1/4 bobbing-animation-2',
+    },
+    {
+      light: '/assets/patron-logos/ieee_young_professionals_logo.jpg',
+      dark: '/assets/patron-logos/ieee_young_professionals_logo.jpg',
+      alt: 'IEEE Young Professionals Logo',
+      url: 'https://yp.ieee.org',
+      overrides: 'w-1/4 bobbing-animation-2',
+    },
   ],
   [TIER_NAME.SILVER]: [
     {
@@ -257,11 +270,11 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       overrides: 'w-1/3 bobbing-animation-3',
     },
     {
-      light: '/assets/patron-logos/cse_logo_light.png',
-      dark: '/assets/patron-logos/cse_logo_dark.png',
+      light: '/assets/patron-logos/cse_logo.jpg',
+      dark: '/assets/patron-logos/cse_logo.jpg',
       alt: 'CSE Logo',
       url: 'https://www.cse-cst.gc.ca',
-      overrides: 'w-1/2 bobbing-animation-3',
+      overrides: 'w-1/4 bobbing-animation-3',
     },
     {
       light: '/assets/patron-logos/ised_logo_light.svg',
@@ -281,8 +294,15 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       light: '/assets/patron-logos/canada_border_services_logo.jpg',
       dark: '/assets/patron-logos/canada_border_services_logo.jpg',
       alt: 'Canada Border Services Agency (CBSA) Logo',
-      url: 'https://www.cbsa-asfc.gc.ca/menu-eng.html',
+      url: 'https://www.cbsa-asfc.gc.ca',
       overrides: 'w-1/4 bobbing-animation-3',
+    },
+    {
+      light: '/assets/patron-logos/ieee_canada_logo.jpeg',
+      dark: '/assets/patron-logos/ieee_canada_logo.jpeg',
+      alt: 'IEEE Canada Logo',
+      url: 'http://ieeecanada.org',
+      overrides: 'w-1/2 bobbing-animation-3',
     },
   ],
   [TIER_NAME.BRONZE]: [
