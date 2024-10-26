@@ -233,6 +233,13 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       overrides: 'w-1/4 bobbing-animation-2',
     },
     {
+      light: '/assets/patron-logos/ieee_canada_logo.jpeg',
+      dark: '/assets/patron-logos/ieee_canada_logo.jpeg',
+      alt: 'IEEE Canada Logo',
+      url: 'http://ieeecanada.org',
+      overrides: 'w-1/2 bobbing-animation-2',
+    },
+    {
       light: '/assets/patron-logos/ieee_life_members_affinity_groups_logo.png',
       dark: '/assets/patron-logos/ieee_life_members_affinity_groups_logo.png',
       alt: 'IEEE Life Members Affinity Groups Logo',
@@ -296,13 +303,6 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       alt: 'Canada Border Services Agency (CBSA) Logo',
       url: 'https://www.cbsa-asfc.gc.ca',
       overrides: 'w-1/4 bobbing-animation-3',
-    },
-    {
-      light: '/assets/patron-logos/ieee_canada_logo.jpeg',
-      dark: '/assets/patron-logos/ieee_canada_logo.jpeg',
-      alt: 'IEEE Canada Logo',
-      url: 'http://ieeecanada.org',
-      overrides: 'w-1/2 bobbing-animation-3',
     },
   ],
   [TIER_NAME.BRONZE]: [
