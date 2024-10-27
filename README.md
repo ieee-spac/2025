@@ -45,8 +45,8 @@
     </th>
     <th align="center">
       <a
-        href="https://www.figma.com/design/rxRdlFbCkzJDezvIPPaQvo/IEEE-SPAC-2024-Website?node-id=492-561&t=JQ71yLIitUFP0EG8-1"
-        ><strong>Design</strong></a
+        href="https://www.figma.com/community/file/1417704325784085062/ieee-spac-2024-twilight-design-system"
+        ><strong>Figma</strong></a
       >
     </th>
     <th align="center">
@@ -71,11 +71,11 @@
     </td>
     <td align="center">
       <a
-        href="https://www.figma.com/design/rxRdlFbCkzJDezvIPPaQvo/IEEE-SPAC-2024-Website?node-id=492-561&t=JQ71yLIitUFP0EG8-1"
+        href="https://www.figma.com/community/file/1417704325784085062/ieee-spac-2024-twilight-design-system"
       >
         <img
           src="https://github.com/user-attachments/assets/c6ec02bf-2512-48e3-ad71-fd6b70d9657b"
-          alt="Design"
+          alt="Figma"
         />
       </a>
     </td>
@@ -97,3 +97,85 @@
     </td>
   </tr>
 </table>
+
+## Setup Guide
+
+This [Next.js](https://nextjs.org) project uses [pnpm](https://pnpm.io/) for package management.
+
+The UI is powered by the Twilight Design System, built upon the following libraries:
+
+- [Aceternity UI](https://ui.aceternity.com)
+- [Magic UI](https://magicui.design/)
+- [Shadcn/ui](https://ui.shadcn.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+UI/UX documentation is done in [Figma](https://figma.com) and [Storybook](https://storybook.js.org/).
+
+The contact form is powered by [Resend](https://resend.com/).
+
+The website is deployed on [Vercel](vercel.com/), and the Storybook app is deployed to [Chromatic](https://www.chromatic.com/).
+
+All commands can be found in `package.json`.
+
+### 1. Clone repo
+
+```sh
+git clone https://github.com/ieee-spac/2024
+```
+
+### 2. Install [Node.js](https://nodejs.org/en) V20+
+
+### 3. Install [pnpm](https://pnpm.io/)
+
+### 4. Install dependencies
+
+```sh
+### Navigate into directory first
+cd 2024
+### Install
+pnpm i
+```
+
+### 4. Run servers
+
+```sh
+pnpm dev ### Website
+```
+
+```sh
+pnpm sb ### Storybook
+```
+
+```sh
+pnpm lint:inspect-open ### ESlint config inspector
+```
+
+### Optional
+
+#### Use Commitizen CLI
+
+```sh
+pnpm cz
+```
+
+#### Generate static builds for deployments
+
+Create `.env` file based on `.env.example` template.
+
+```sh
+cp .env.example .env
+```
+
+- Obtain [Resend](https://resend.com) API key to get contact form working
+- Obtain [Chromatic](https://www.chromatic.com) API key to publish Storybook to Chromatic.
+
+```sh
+pnpm build ### Website
+pnpm build-storybook ### Storybook
+```
+
+#### Serve static build
+
+```sh
+pnpm start
+```
