@@ -65,7 +65,7 @@ export function Footer({
             Inspired by the
             {' '}
             <a
-              href="https://www.figma.com/design/rxRdlFbCkzJDezvIPPaQvo/IEEE-SPAC-2024?node-id=902-880&t=ZldInFyhfowPbI3q-1"
+              href="https://2022-ieeespac.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary underline transition ease-in-out duration-700"
