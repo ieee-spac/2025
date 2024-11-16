@@ -16,6 +16,7 @@ export const METADATA = {
 
 export const LINKS = {
   DOMAIN: 'ieeespac.ca',
+  GALLERY: 'https://drive.google.com/drive/u/3/mobile/folders/0B4VqCgvXdbxNUjNpUFhZemFWR1U/1t1wo5ATw8oO6vOYsyhhOft_Fiz4EGMb2/1_59r7r46BiWdWTyccP7bBQKBxuhxR_HK?sort=13&direction=a',
   PATRONAGE_PACKAGE:
     'https://drive.google.com/file/d/1wfvpv5T8Xg-cmt5kmps9Gzlddq9_Cdc0/view?usp=sharing',
   SPAC_TICKETS: 'https://events.vtools.ieee.org/m/436955',
