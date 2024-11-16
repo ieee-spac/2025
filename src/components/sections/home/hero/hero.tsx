@@ -61,21 +61,12 @@ export function Hero() {
           />
           <div className="flex flex-wrap lg:flex-nowrap md:text-nowrap w-full justify-center gap-2">
             <a
-              href={LINKS.SPAC_TICKETS}
+              href={LINKS.GALLERY}
               target="_blank"
               rel="noopener noreferrer"
             >
               <ShinyButton
-                text="Registration (SPAC)"
-              />
-            </a>
-            <a
-              href={LINKS.SPAC_PLUS_AGM_TICKETS}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <ShinyButton
-                text="Registration (SPAC+AGM)"
+                text="View Gallery"
               />
             </a>
           </div>
