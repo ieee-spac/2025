@@ -17,6 +17,9 @@
       ],
       "@root/*": [
         "./*"
+      ],
+      "@lib/*": [
+        "src/lib/*"
       ]
     },
     "resolveJsonModule": true,
