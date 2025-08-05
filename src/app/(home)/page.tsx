@@ -1,6 +1,7 @@
 import { Header } from '@/components/layout/header/header'
 import { Hero } from '@/components/sections/home/hero/hero'
 import { About } from '@/components/sections/home/about/about'
+import { PreviousPatrons } from '@/components/sections/home/previous-patrons/previous-patrons'
 import { Patrons } from '@/components/sections/home/patrons/patrons'
 import { Agenda } from '@/components/sections/home/agenda/agenda'
 import { Team } from '@/components/sections/home/team/team'
@@ -19,6 +20,7 @@ export default function HomePage() {
       <Hero />
       <About />
       <Patrons />
+      <PreviousPatrons />
       <Agenda />
       <Team />
       <Contact />
