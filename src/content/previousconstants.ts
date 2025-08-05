@@ -1,13 +1,3 @@
-import {
-  FaFacebookF,
-  FaFigma,
-  FaGithub,
-  FaInstagram,
-  FaLinkedinIn,
-} from 'react-icons/fa6'
-
-import { SiChromatic, SiStorybook } from 'react-icons/si'
-
 export const METADATA = {
   title: 'IEEE SPAC 2024',
   description:
@@ -35,7 +25,7 @@ export const LINKS = {
     'https://www.chromatic.com/library?appId=665264891b6bc70eded9109a&branch=main',
 }
 
-export const SHINY_BUTTONS = [
+/* export const SHINY_BUTTONS = [
   {
     text: 'Become a Patron',
     href: LINKS.PATRONAGE_PACKAGE,
@@ -48,35 +38,34 @@ export const SHINY_BUTTONS = [
     text: 'Registration (SPAC+AGM)',
     href: LINKS.SPAC_PLUS_AGM_TICKETS,
   },
-]
+] */
 
 // -----------------  HEADER ------------------
-export const HEADER = {
+/* export const HEADER = {
   IMAGE_URL:
     '/assets/twilight-design-system/ieee_spac_logo_vertical_no_year.svg',
   NAV_LINKS: [
     // { name: 'Home', path: '#home' },
     { name: 'About', path: '#about' },
     { name: 'Patrons', path: '#patrons' },
-    { name: 'Previous Patrons', path: '#previouspatrons' },
     { name: 'Agenda', path: '#agenda' },
     { name: 'Team', path: '#team' },
     { name: 'Contact', path: '#contact' },
   ],
-}
+} */
 
 // -----------------  HERO ------------------
-export const HERO = {
+/* export const HERO = {
   IMAGE_URL: '/assets/spac_logo_year_stars.svg',
   IMAGE_ALT_TEXT: 'Main SPAC logo with year and stars',
   TITLE: 'IEEE Student Professional Awareness Conference',
   DATE: 'November 1',
   LOCATION: 'Brookstreet Hotel',
   LOCATION_LINK: LINKS.LOCATION,
-}
+} */
 
 // --- About Section ---
-export const ABOUT = {
+/* export const ABOUT = {
   TITLE: 'About Us',
   PARAGRAPHS: [
     'The IEEE Student Professional Awareness Conference (SPAC) is a formal networking event & dinner that serves esteemed professionals and allows them to engage with engineering and computer science students within their fields.',
@@ -165,7 +154,7 @@ export const ABOUT = {
     { text: 'SPAC Tickets', href: LINKS.SPAC_TICKETS },
     { text: 'SPAC+AGM Tickets', href: LINKS.SPAC_PLUS_AGM_TICKETS },
   ],
-}
+} */
 
 export enum TIER_NAME {
   PLATINUM = 'Platinum',
@@ -333,11 +322,11 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
 }
 
 export const PATRONS = {
-  TITLE: 'Our Patrons',
-  ID: 'patrons',
+  TITLE: 'Our Previous Patrons',
+  ID: 'previouspatrons',
 }
 
-export const CONTACT_FORM = {
+/* export const CONTACT_FORM = {
   TITLE: 'Contact Us',
   SUBTITLE: 'Get in Touch',
   DESCRIPTION:
@@ -637,3 +626,4 @@ export const CONTACT_FORM_EMAILS = {
   TEAM_EMAIL: 'lead@ieeespac.ca',
   FORM_SUBMISSION_EMAIL: 'formsubmission@ieeespac.ca',
 }
+ */
