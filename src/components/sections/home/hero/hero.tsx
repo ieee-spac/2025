@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import logo from '@root/public/assets/twilight-design-system/spac_logo_year_stars.svg'
+import logo from '@root/public/assets/twilight-design-system/SPAC2025_logo_sparkles.svg'
 import { ShinyButton } from '@/components/twilight/shiny-button/shiny-button'
 import ShineBorder from '@/components/twilight/shine-pulse/shine-pulse'
 import { WarpBackground } from '@/components/twilight/warp-background/warp-background'
