@@ -71,9 +71,9 @@ export function Hero() {
                 </p>
                 <p className="text-xs md:text-xl font-thin">
                   {HERO.DATE}
-                  <sup>st</sup>
+                  {/* <sup>st</sup> */}
                   {' '}
-                  |
+                  coming soon
                   {' '}
                   <a
                     href={HERO.LOCATION_LINK}
