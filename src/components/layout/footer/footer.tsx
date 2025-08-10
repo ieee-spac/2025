@@ -65,40 +65,40 @@ export function Footer({
             Inspired by the
             {' '}
             <a
-              href="https://2022-ieeespac.vercel.app"
+              href="https://2024ieeespac.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary underline transition ease-in-out duration-700"
             >
-              2022 SPAC Website
+              2024 SPAC Website
             </a>
             .
-            Brand Cover made with 💙 by
+            Cover made with 💛 by
             {
               ' '
             }
             <a
-              href="https://www.linkedin.com/in/aashna-verma-000/"
+              /*            href="https://www.linkedin.com/in/aashna-verma-000/" */
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-auxiliary
+              className="hover:text-yellow-500
 font-bold transition ease-in-out duration-700
                      "
             >
-              Aashna Verma
+              Gray Joslin
             </a>
             .
-            Re-designed & developed with 🧡 by
+            Re-designed & developed with 💜 by
             {
               ' '
             }
             <a
-              href="https://www.linkedin.com/in/mfarabi/"
+              href="https://www.linkedin.com/in/saim-hashmi-2230b6243/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-warning font-bold transition ease-in-out duration-700"
+              className="hover:text-purple-500 font-bold transition ease-in-out duration-700"
             >
-              Mumtahin Farabi
+              Saim Hashmi
             </a>
             .
           </p>
