@@ -6,7 +6,7 @@ export function Team() {
   return (
     <div id="team" className="mx-auto mt-20 max-w-3xl px-3 md:px-8">
       <h2 className="mb-10 text-5xl font-bold text-primary sm:text-6xl">
-        Meet the Team
+        2024 Team
       </h2>
 
       <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-3">
