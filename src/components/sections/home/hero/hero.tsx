@@ -16,7 +16,7 @@ export function Hero() {
     <WarpBackground>
       <div
         id="home"
-        className="overflow-x-clip flex h-screen w-full items-center justify-center p-4 "
+        className="overflow-x-clip flex h-screen w-full items-center justify-center "
       >
         {/* Radial gradient for the container to give a faded look */}
         {/* <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_0%,black)] dark:bg-black" /> */}
@@ -26,7 +26,8 @@ export function Hero() {
         <ShineBorder
           color={['hsl(var(--primary))', 'hsl(var(--warning))', 'hsl(var(--tertiary))']}
         >
-          <main className="backdrop-blur-xs group flex h-fit w-full max-w-4xl flex-col items-center justify-center space-y-4 rounded-sm hover:border-primary px-4 py-8 transition-all duration-300 ease-in-out md:px-20 md:py-16">
+          <main className="backdrop-blur-xs group flex h-fit w-full max-w-full md:max-w-4xl flex-col items-center justify-center space-y-4 rounded-sm hover:border-primary px-4 py-8 transition-all duration-300 ease-in-out md:px-20 md:py-16 mx-auto">
+
             {/* Logo */}
             <Image
               priority
