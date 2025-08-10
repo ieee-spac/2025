@@ -2,8 +2,6 @@ import { Header } from '@/components/layout/header/header'
 import { Hero } from '@/components/sections/home/hero/hero'
 import { About } from '@/components/sections/home/about/about'
 import { PreviousPatrons } from '@/components/sections/home/previous-patrons/previous-patrons'
-import { Patrons } from '@/components/sections/home/patrons/patrons'
-import { Agenda } from '@/components/sections/home/agenda/agenda'
 import { Team } from '@/components/sections/home/team/team'
 import { Contact } from '@/components/sections/home/contact/contact'
 import { Footer } from '@/components/layout/footer/footer'
@@ -19,9 +17,9 @@ export default function HomePage() {
       />
       <Hero />
       <About />
-      <Patrons />
+      {/* <Patrons /> */}
       <PreviousPatrons />
-      <Agenda />
+      {/* <Agenda /> */}
       <Team />
       <Contact />
       <Footer />

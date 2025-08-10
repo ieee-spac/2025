@@ -1,12 +1,9 @@
 import {
   FaFacebookF,
-  FaFigma,
   FaGithub,
   FaInstagram,
   FaLinkedinIn,
 } from 'react-icons/fa6'
-
-import { SiChromatic, SiStorybook } from 'react-icons/si'
 
 export const METADATA = {
   title: 'IEEE SPAC 2024',
@@ -27,7 +24,7 @@ export const LINKS = {
   INSTAGRAM: 'https://www.instagram.com/ieeespac/?hl=en',
   LINKEDIN: 'https://www.linkedin.com/company/ieeespac/',
   FACEBOOK: 'https://www.facebook.com/ieeespacottawa/',
-  GITHUB: 'https://github.com/ieee-spac/2024',
+  GITHUB: 'https://github.com/ieee-spac/2025',
   STORYBOOK: 'https://main--665264891b6bc70eded9109a.chromatic.com',
   FIGMA:
     'https://www.figma.com/community/file/1417704325784085062/ieee-spac-2024-twilight-design-system',
@@ -57,10 +54,10 @@ export const HEADER = {
   NAV_LINKS: [
     // { name: 'Home', path: '#home' },
     { name: 'About', path: '#about' },
-    { name: 'Patrons', path: '#patrons' },
+    /* { name: 'Patrons', path: '#patrons' }, */
     { name: 'Previous Patrons', path: '#previouspatrons' },
-    { name: 'Agenda', path: '#agenda' },
-    { name: 'Team', path: '#team' },
+    /* { name: 'Agenda', path: '#agenda' }, */
+    { name: ' Previous Team', path: '#team' },
     { name: 'Contact', path: '#contact' },
   ],
 }
@@ -70,8 +67,8 @@ export const HERO = {
   IMAGE_URL: '/assets/spac_logo_year_stars.svg',
   IMAGE_ALT_TEXT: 'Main SPAC logo with year and stars',
   TITLE: 'IEEE Student Professional Awareness Conference',
-  DATE: 'November 1',
-  LOCATION: 'Brookstreet Hotel',
+  /*   DATE: 'November 1',
+  LOCATION: 'Brookstreet Hotel', */
   LOCATION_LINK: LINKS.LOCATION,
 }
 
@@ -371,7 +368,7 @@ export const CONTACT_FORM = {
 
 export const FOOTER = {
   LOGO: '/assets/twilight-design-system/ieee_spac_logo_combined_horizontal.svg',
-  COPYRIGHT_TEXT: 'Copyright © 2024 IEEE - All rights reserved.',
+  COPYRIGHT_TEXT: 'Copyright © 2025 IEEE - All rights reserved.',
   SOCIAL_MEDIA: [
     {
       name: 'Instagram',
@@ -396,24 +393,6 @@ export const FOOTER = {
       url: LINKS.GITHUB,
       Icon: FaGithub,
       className: 'text-green-500',
-    },
-    {
-      name: 'Figma',
-      url: LINKS.FIGMA,
-      Icon: FaFigma,
-      className: 'text-indigo-400',
-    },
-    {
-      name: 'Storybook',
-      url: LINKS.STORYBOOK,
-      Icon: SiStorybook,
-      className: 'text-pink-500',
-    },
-    {
-      name: 'Chromatic',
-      url: LINKS.CHROMATIC,
-      Icon: SiChromatic,
-      className: 'text-orange-600',
     },
   ],
 }
