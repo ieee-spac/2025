@@ -6,9 +6,9 @@ import {
 } from 'react-icons/fa6'
 
 export const METADATA = {
-  title: 'IEEE SPAC 2024',
+  title: 'IEEE SPAC 2025',
   description:
-    'Official Website of the IEEE Student Professional Awareness Conference 2024, hosted in Ottawa, Ontario.',
+    'Official Website of the IEEE Student Professional Awareness Conference 2025, hosted in Ottawa, Ontario.',
 }
 
 export const LINKS = {
