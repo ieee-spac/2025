@@ -57,7 +57,7 @@ export const HEADER = {
     /* { name: 'Patrons', path: '#patrons' }, */
     { name: 'Previous Patrons', path: '#previouspatrons' },
     /* { name: 'Agenda', path: '#agenda' }, */
-    { name: ' Previous Team', path: '#team' },
+    { name: 'Team', path: '#team' },
     { name: 'Contact', path: '#contact' },
   ],
 }
@@ -508,12 +508,12 @@ export const TEAM_MEMBERS: ITEAM_MEMBER[] = [
     instagram: '',
   },
   {
-    name: 'Farah El Siss',
+    name: 'Farah El Siss ',
     image: '/assets/team-member-headshots/Headshot2 - Farah El Siss.jpg',
     institution: INSTITUTIONS.UNIVERSITY_OF_OTTAWA,
     role: ROLE.PATRONAGE_LEAD,
     yearStanding: '6th',
-    programName: 'Biomedical Mechanical Engineering & Computing Technology',
+    programName: ' Biomedical Mechanical Engineering & Computing Technology',
     email: ROLE_EMAIL_MAP[ROLE.PATRONAGE_LEAD],
     linkedin: 'https://www.linkedin.com/in/farahelsiss/',
     github: '',
@@ -656,7 +656,7 @@ export const TEAM_MEMBERS: ITEAM_MEMBER[] = [
     institution: INSTITUTIONS.CARLETON_UNIVERSITY,
     role: ROLE.DEVELOPMENT,
     yearStanding: '3rd',
-    programName: 'Computer Science - Minor in Business',
+    programName: 'Computer Systems Engineering - Minor in Business',
     email: ROLE_EMAIL_MAP[ROLE.DEVELOPMENT],
     linkedin: 'www.linkedin.com/in/saim-hashmi-2230b6243',
     github: 'https://github.com/anakafeel',
