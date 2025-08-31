@@ -21,7 +21,7 @@ export function TeamCard({ member }: { member: ITEAM_MEMBER }) {
       </div>
 
       {/* CARD CONTAINER */}
-      <div className="relative bg-card/80 backdrop-blur-sm rounded-2xl p-6 border border-border transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-fuchsia-500/20 hover:border-fuchsia-500/30 hover:-translate-y-2 h-80 md:h-96 flex flex-col">
+      <div className="relative bg-card/80 backdrop-blur-sm rounded-2xl p-6 border border-border transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-fuchsia-500/20 hover:border-fuchsia-500/30 hover:-translate-y-2 h-[26rem] md:h-[26rem] flex flex-col">
         {/* ANIMATED BACKGROUND GLOW */}
         <div className="absolute inset-0 bg-gradient-to-r from-fuchsia-500/0 via-cyan-500/0 to-green-500/0 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-700 blur-xl"></div>
 
@@ -30,7 +30,7 @@ export function TeamCard({ member }: { member: ITEAM_MEMBER }) {
           <div className="relative w-32 h-32 md:w-36 md:h-36">
             {/* ANIMATED RING */}
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-fuchsia-500 via-cyan-500 to-green-500 opacity-0 group-hover:opacity-100 transition-all duration-700 animate-spin-slow p-1">
-              <div className="w-full h-full rounded-full bg-background"></div>
+              <div className="w-full h-full rounded-full bg-background transition-colors duration-300"></div>
             </div>
 
             {/* PROFILE IMAGE */}
@@ -50,7 +50,7 @@ export function TeamCard({ member }: { member: ITEAM_MEMBER }) {
                 href={member.institution.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="absolute -top-2 -right-2 w-10 h-10 md:w-12 md:h-12 bg-background rounded-full p-1.5 shadow-lg opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 delay-200 hover:scale-110 z-20 cursor-pointer border border-border"
+                className="absolute -top-2 -right-2 w-10 h-10 md:w-12 md:h-12 bg-background rounded-full p-1.5 shadow-lg opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 delay-200 hover:scale-110 z-20 cursor-pointer border border-border transition-colors duration-300"
                 aria-label={`Visit ${member.institution.name} website`}
               >
                 <Image
@@ -65,7 +65,7 @@ export function TeamCard({ member }: { member: ITEAM_MEMBER }) {
 
             {/* YEAR STANDING - Hidden by default, appears on hover */}
             {member.yearStanding && (
-              <div className="absolute -bottom-2 -right-2 flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full bg-muted border-2 border-border group-hover:border-fuchsia-500 transition-all duration-500 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 delay-300 z-20">
+              <div className="absolute -bottom-2 -right-2 flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full bg-muted border-2 border-border group-hover:border-fuchsia-500 transition-all duration-500 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 delay-300 z-20 transition-colors duration-300">
                 <span
                   className={`
                     ${
@@ -91,28 +91,28 @@ export function TeamCard({ member }: { member: ITEAM_MEMBER }) {
         </div>
 
         {/* NAME */}
-        <h4 className="text-center text-lg md:text-xl font-bold text-green-400 mb-2 transition-all duration-300 group-hover:text-green-300 group-hover:drop-shadow-lg flex-shrink-0">
+        <h4 className="text-center text-lg md:text-xl font-bold text-green-400 mb-4 transition-all duration-300 group-hover:text-green-300 group-hover:drop-shadow-lg flex-shrink-0 min-h-[3rem] md:min-h-[2rem] flex items-center justify-center leading-tight">
           {member.name}
         </h4>
 
         {/* PROGRAM */}
-        <div className="flex-grow flex items-center justify-center mb-4 min-h-[3rem] md:min-h-[4rem]">
-          <p className="text-center text-sm md:text-base text-muted-foreground transition-all duration-300 group-hover:text-foreground px-2 leading-tight">
+        <div className="flex-grow flex items-center justify-center mb-6 min-h-[3rem] md:min-h-[4rem]">
+          <p className="text-center text-sm md:text-base text-muted-foreground transition-all duration-300 group-hover:text-foreground px-2 leading-tight transition-colors duration-300">
             {member.programName}
           </p>
         </div>
 
         {/* SOCIAL MEDIA LINKS */}
-        <div className="flex justify-center space-x-1 md:space-x-4 flex-shrink-0 px-4 md:px-2">
+        <div className="flex justify-center space-x-3 md:space-x-4 flex-shrink-0 px-4 md:px-2 w-full max-w-[280px] md:max-w-[200px] mx-auto">
           {member.linkedin && (
             <a
               href={member.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full bg-muted text-sky-400 border border-border transition-all duration-300 hover:bg-sky-500 hover:text-white hover:scale-[1.02] md:hover:scale-110 hover:shadow-lg hover:shadow-sky-500/30 hover:border-sky-400 cursor-pointer z-30"
+              className="flex items-center justify-center w-11 h-11 md:w-10 md:h-10 rounded-full bg-muted text-sky-400 border border-border transition-all duration-300 hover:bg-sky-500 hover:text-white hover:scale-[1.02] md:hover:scale-110 hover:shadow-lg hover:shadow-sky-500/30 hover:border-sky-400 cursor-pointer z-30 transition-colors duration-300"
               aria-label="LinkedIn"
             >
-              <FaLinkedinIn className="text-xs md:text-lg" />
+              <FaLinkedinIn className="text-base md:text-lg" />
             </a>
           )}
           {member.github && (
@@ -120,10 +120,10 @@ export function TeamCard({ member }: { member: ITEAM_MEMBER }) {
               href={member.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full bg-muted text-green-400 border border-border transition-all duration-300 hover:bg-green-500 hover:text-white hover:scale-[1.02] md:hover:scale-110 hover:shadow-lg hover:shadow-green-500/30 hover:border-green-400 cursor-pointer z-30"
+              className="flex items-center justify-center w-11 h-11 md:w-10 md:h-10 rounded-full bg-muted text-green-400 border border-border transition-all duration-300 hover:bg-green-500 hover:text-white hover:scale-[1.02] md:hover:scale-110 hover:shadow-lg hover:shadow-green-500/30 hover:border-green-400 cursor-pointer z-30 transition-colors duration-300"
               aria-label="GitHub"
             >
-              <FaGithub className="text-xs md:text-lg" />
+              <FaGithub className="text-base md:text-lg" />
             </a>
           )}
           {member.website && (
@@ -131,10 +131,10 @@ export function TeamCard({ member }: { member: ITEAM_MEMBER }) {
               href={member.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full bg-muted text-purple-400 border border-border transition-all duration-300 hover:bg-purple-500 hover:text-white hover:scale-[1.02] md:hover:scale-110 hover:shadow-lg hover:shadow-purple-500/30 hover:border-purple-400 cursor-pointer z-30"
+              className="flex items-center justify-center w-11 h-11 md:w-10 md:h-10 rounded-full bg-muted text-purple-400 border border-border transition-all duration-300 hover:bg-purple-500 hover:text-white hover:scale-[1.02] md:hover:scale-110 hover:shadow-lg hover:shadow-purple-500/30 hover:border-purple-400 cursor-pointer z-30 transition-colors duration-300"
               aria-label="Website"
             >
-              <FaGlobe className="text-xs md:text-lg" />
+              <FaGlobe className="text-base md:text-lg" />
             </a>
           )}
           {member.instagram && (
@@ -142,10 +142,10 @@ export function TeamCard({ member }: { member: ITEAM_MEMBER }) {
               href={member.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full bg-muted text-pink-400 border border-border transition-all duration-300 hover:bg-pink-500 hover:text-white hover:scale-[1.02] md:hover:scale-110 hover:shadow-lg hover:shadow-pink-500/30 hover:border-pink-400 cursor-pointer z-30"
+              className="flex items-center justify-center w-11 h-11 md:w-10 md:h-10 rounded-full bg-muted text-pink-400 border border-border transition-all duration-300 hover:bg-pink-500 hover:text-white hover:scale-[1.02] md:hover:scale-110 hover:shadow-lg hover:shadow-pink-500/30 hover:border-pink-400 cursor-pointer z-30 transition-colors duration-300"
               aria-label="Instagram"
             >
-              <FaInstagram className="text-xs md:text-lg" />
+              <FaInstagram className="text-base md:text-lg" />
             </a>
           )}
         </div>
