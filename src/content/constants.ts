@@ -658,7 +658,7 @@ export const TEAM_MEMBERS: ITEAM_MEMBER[] = [
     yearStanding: '3rd',
     programName: 'Computer Systems Engineering - Minor in Business',
     email: ROLE_EMAIL_MAP[ROLE.DEVELOPMENT],
-    linkedin: 'www.linkedin.com/in/saim-hashmi-2230b6243',
+    linkedin: 'https://www.linkedin.com/in/saim-hashmi-2230b6243/',
     github: 'https://github.com/anakafeel',
     website: 'https://saimhashmi.tech',
     instagram: '',
