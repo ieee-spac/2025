@@ -485,7 +485,7 @@ export const TEAM_MEMBERS: ITEAM_MEMBER[] = [
     name: 'Rory McCulloch',
     image: '/assets/team-member-headshots/IMG_9901 - SPAC Lead Director IEEE.JPG',
     institution: INSTITUTIONS.UNIVERSITY_OF_OTTAWA,
-    role: ROLE.LEAD,
+    role: ROLE.COLEAD,
     yearStanding: '2nd',
     programName: 'Electrical Engineering and Computing Technology',
     email: ROLE_EMAIL_MAP[ROLE.LEAD],
