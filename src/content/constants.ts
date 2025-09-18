@@ -645,7 +645,7 @@ export const TEAM_MEMBERS: ITEAM_MEMBER[] = [
     yearStanding: '3rd',
     programName: 'Bachelor of Information Technology - Interactive Multimedia and Design',
     email: '',
-    linkedin: '',
+    linkedin: 'https://www.linkedin.com/in/gray-joslin-6b932a384/',
     github: '',
     website: '',
     instagram: '',
