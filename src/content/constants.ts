@@ -16,7 +16,7 @@ export const LINKS = {
   GALLERY: 'https://drive.google.com/drive/u/3/mobile/folders/0B4VqCgvXdbxNUjNpUFhZemFWR1U/1t1wo5ATw8oO6vOYsyhhOft_Fiz4EGMb2/1_59r7r46BiWdWTyccP7bBQKBxuhxR_HK?sort=13&direction=a',
   PATRONAGE_PACKAGE:
     'https://drive.google.com/file/d/1wfvpv5T8Xg-cmt5kmps9Gzlddq9_Cdc0/view?usp=sharing',
-  SPAC_TICKETS: 'https://events.vtools.ieee.org/m/436955',
+  SPAC_TICKETS: 'https://www.eventbrite.com/e/student-professional-awareness-conference-2025-tickets-1661438470189?utm_experiment=test_share_listing&sg=46bac6f1b1abfbd58224fb8e29a196e19e7dd4a112e84e17e4a90a27dd5125890e38d4c589f3ec78c4d3a2fb06fc258d4e9213a81710f6600a1e5ce02061d0b6cd2095bc6b53e5cdd80f7a78a0f2',
   SPAC_PLUS_AGM_TICKETS: 'https://events.vtools.ieee.org/m/435598',
   AGENDA:
     'https://www.canva.com/design/DAGTJGf_Nh0/R3T3kFHxLV0lEa26p1s9oQ/view?embed',

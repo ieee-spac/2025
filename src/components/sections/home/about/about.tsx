@@ -109,7 +109,7 @@ export function About() {
             text="Registration (SPAC)"
           />
         </a>
-        <a
+        {/*         <a
           href={LINKS.SPAC_PLUS_AGM_TICKETS}
           target="_blank"
           rel="noopener noreferrer"
@@ -117,7 +117,7 @@ export function About() {
           <ShinyButton
             text="Registration (SPAC+AGM)"
           />
-        </a>
+        </a> */}
       </div>
     </article>
   )
