@@ -55,7 +55,7 @@ export const HEADER = {
     // { name: 'Home', path: '#home' },
     { name: 'About', path: '#about' },
     /* { name: 'Patrons', path: '#patrons' }, */
-    { name: 'Previous Patrons', path: '#previouspatrons' },
+    /* { name: 'Previous Patrons', path: '#previouspatrons' }, */
     /* { name: 'Agenda', path: '#agenda' }, */
     { name: 'Team', path: '#team' },
     { name: 'Contact', path: '#contact' },
