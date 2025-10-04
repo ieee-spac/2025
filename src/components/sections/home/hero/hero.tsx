@@ -71,10 +71,9 @@ export function Hero() {
                   {HERO.TITLE}
                 </p>
                 <p className="text-xs md:text-xl font-thin">
-                  {/* {HERO.DATE} */}
-                  {/* <sup>st</sup> */}
+                  {HERO.DATE}
+                  <sup>st</sup>
                   {' '}
-                  coming soon
                   {' '}
                   <a
                     href={HERO.LOCATION_LINK}
@@ -82,8 +81,12 @@ export function Hero() {
                     rel="noopener noreferrer"
                     className="link"
                   >
-                    {/* {HERO.LOCATION} */}
+                    {HERO.LOCATION}
                   </a>
+                  {' '}
+                  |
+                  {' '}
+                  {HERO.TIME}
                 </p>
               </div>
             </div>
