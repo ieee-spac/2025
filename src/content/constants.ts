@@ -15,7 +15,7 @@ export const LINKS = {
   DOMAIN: 'ieeespac.ca',
   GALLERY: 'https://drive.google.com/drive/u/3/mobile/folders/0B4VqCgvXdbxNUjNpUFhZemFWR1U/1t1wo5ATw8oO6vOYsyhhOft_Fiz4EGMb2/1_59r7r46BiWdWTyccP7bBQKBxuhxR_HK?sort=13&direction=a',
   PATRONAGE_PACKAGE:
-    'https://drive.google.com/file/d/1wfvpv5T8Xg-cmt5kmps9Gzlddq9_Cdc0/view?usp=sharing',
+    'https://www.canva.com/design/DAGm9tsOucg/neaqO-lvIVJiQMIKE8r-HQ/view?utm_content=DAGm9tsOucg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7a71b5f6d5#1',
   SPAC_TICKETS: 'https://www.eventbrite.com/e/student-professional-awareness-conference-2025-tickets-1661438470189?utm_experiment=test_share_listing&sg=46bac6f1b1abfbd58224fb8e29a196e19e7dd4a112e84e17e4a90a27dd5125890e38d4c589f3ec78c4d3a2fb06fc258d4e9213a81710f6600a1e5ce02061d0b6cd2095bc6b53e5cdd80f7a78a0f2',
   SPAC_PLUS_AGM_TICKETS: 'https://events.vtools.ieee.org/m/435598',
   AGENDA:
@@ -54,7 +54,7 @@ export const HEADER = {
   NAV_LINKS: [
     // { name: 'Home', path: '#home' },
     { name: 'About', path: '#about' },
-    /* { name: 'Patrons', path: '#patrons' }, */
+    { name: 'Patrons', path: '#patrons' },
     /* { name: 'Previous Patrons', path: '#previouspatrons' }, */
     /* { name: 'Agenda', path: '#agenda' }, */
     { name: 'Team', path: '#team' },
@@ -166,7 +166,7 @@ export const ABOUT = {
 }
 
 export enum TIER_NAME {
-  PLATINUM = 'Platinum',
+  PLATINUM = 'Platinum/Title',
   GOLD = 'Gold',
   SILVER = 'Silver',
   BRONZE = 'Bronze',
@@ -219,6 +219,20 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
     //   overrides: 'w-1/4 bobbing-animation-2',
     // },
     {
+      light: '/assets/patron-logos/redbull_logo.png',
+      dark: '/assets/patron-logos/redbull_logo.png',
+      alt: 'Redbull logo',
+      url: 'https://www.redbull.com/ca-en',
+      overrides: 'w-1/2 bobbing-animation-2',
+    },
+    {
+      light: '/assets/patron-logos/lumentum_logo_light.png',
+      dark: '/assets/patron-logos/lumentum_logo_dark.png',
+      alt: 'Lumentum logo',
+      url: 'https://www.lumentum.com/en',
+      overrides: 'w-1/2 bobbing-animation-2',
+    },
+    /*     {
       light: '/assets/patron-logos/eef_uottawa_logo_light.svg',
       dark: '/assets/patron-logos/eef_uottawa_logo_dark.svg',
       alt: 'EEF uOttawa logo',
@@ -252,10 +266,38 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       alt: 'IEEE Young Professionals Logo',
       url: 'https://yp.ieee.org',
       overrides: 'w-1/4 bobbing-animation-2',
-    },
+    }, */
   ],
   [TIER_NAME.SILVER]: [
     {
+      light: '/assets/patron-logos/ieee_life_members_affinity_groups_logo.png',
+      dark: '/assets/patron-logos/ieee_life_members_affinity_groups_logo.png',
+      alt: 'IEEE Life Members Affinity Groups Logo',
+      url: 'https://life.ieee.org',
+      overrides: 'w-1/4 bobbing-animation-2',
+    },
+    {
+      light: '/assets/patron-logos/CGI_logo.png',
+      dark: '/assets/patron-logos/CGI_logo.png',
+      alt: 'CGI Logo',
+      url: 'https://www.cgi.com/canada/en-ca',
+      overrides: 'w-1/4 bobbing-animation-2',
+    },
+    {
+      light: '/assets/patron-logos/nordion_logo_light.svg',
+      dark: '/assets/patron-logos/nordion_logo_dark.svg',
+      alt: 'Nordion Logo',
+      url: 'https://www.nordion.com',
+      overrides: 'w-1/3 bobbing-animation-3',
+    },
+    {
+      light: '/assets/patron-logos/NAVCANADA_logo.png',
+      dark: '/assets/patron-logos/NAVCANADA_logo.png',
+      alt: 'Nav Canada Logo',
+      url: 'https://www.navcanada.ca/en/',
+      overrides: 'w-1/3 bobbing-animation-3',
+    },
+    /*     {
       light: '/assets/patron-logos/ciena_logo.svg',
       dark: '/assets/patron-logos/ciena_logo.svg',
       alt: 'Ciena Logo',
@@ -269,13 +311,7 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       url: 'https://www.skyworksinc.com',
       overrides: 'w-1/3 bobbing-animation-3',
     },
-    {
-      light: '/assets/patron-logos/nordion_logo_light.svg',
-      dark: '/assets/patron-logos/nordion_logo_dark.svg',
-      alt: 'Nordion Logo',
-      url: 'https://www.nordion.com',
-      overrides: 'w-1/3 bobbing-animation-3',
-    },
+
     {
       light: '/assets/patron-logos/cse_logo.jpg',
       dark: '/assets/patron-logos/cse_logo.jpg',
@@ -303,7 +339,7 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       alt: 'Canada Border Services Agency (CBSA) Logo',
       url: 'https://www.cbsa-asfc.gc.ca',
       overrides: 'w-1/4 bobbing-animation-3',
-    },
+    }, */
   ],
   [TIER_NAME.BRONZE]: [
     {

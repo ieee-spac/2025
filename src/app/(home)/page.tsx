@@ -5,6 +5,7 @@ import { About } from '@/components/sections/home/about/about'
 import { Team } from '@/components/sections/home/team/team'
 import { Contact } from '@/components/sections/home/contact/contact'
 import { Footer } from '@/components/layout/footer/footer'
+import { Patrons } from '@/components/sections/home/patrons/patrons'
 
 import { HEADER } from '@/content/constants'
 
@@ -17,7 +18,7 @@ export default function HomePage() {
       />
       <Hero />
       <About />
-      {/* <Patrons /> */}
+      <Patrons />
       {/* <PreviousPatrons /> */}
       {/* <Agenda /> */}
       <Team />
