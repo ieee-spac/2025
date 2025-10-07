@@ -169,7 +169,8 @@ export enum TIER_NAME {
   PLATINUM = 'Platinum/Title',
   GOLD = 'Gold',
   SILVER = 'Silver',
-  BRONZE = 'Bronze',
+  /*   BRONZE = 'Bronze', */
+  HOSTED = 'Hosted By',
 }
 
 export interface ITIER_LOGO {
@@ -193,9 +194,13 @@ export const TIER_PROPERTIES = {
     titleColor: 'text-slate-400',
     gradientClass: 'from-slate-400 to-background',
   },
-  [TIER_NAME.BRONZE]: {
+  /*   [TIER_NAME.BRONZE]: {
     titleColor: 'text-amber-800',
     gradientClass: 'from-amber-800 to-background',
+  }, */
+  [TIER_NAME.HOSTED]: {
+    titleColor: 'text-cyan-400',
+    gradientClass: 'from-cyan-400 to-background',
   },
 }
 
@@ -341,7 +346,7 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       overrides: 'w-1/4 bobbing-animation-3',
     }, */
   ],
-  [TIER_NAME.BRONZE]: [
+  /*   [TIER_NAME.BRONZE]: [
     {
       light: '/assets/patron-logos/nokia_logo.svg',
       dark: '/assets/patron-logos/nokia_logo.svg',
@@ -363,6 +368,30 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       url: 'https://www.yow.ca',
       overrides: 'w-1/4 bobbing-animation-4',
     },
+  ], */
+  [TIER_NAME.HOSTED]: [
+    {
+      light: '/assets/patron-logos/ieee_uottawa_logo_light.svg',
+      dark: '/assets/patron-logos/ieee_uottawa_logo_dark.svg',
+      alt: 'uOttawa IEEE Logo',
+      url: 'https://ieeeuottawa.ca',
+      overrides: 'w-1/4 bobbing-animation-2',
+    },
+    {
+      light: '/assets/patron-logos/CU_logo.png',
+      dark: '/assets/patron-logos/CU_logo.png',
+      alt: 'Carleton University Logo',
+      url: 'https://carleton.ca',
+      overrides: 'w-1/4 bobbing-animation-2',
+    },
+    {
+      light: '/assets/patron-logos/Alg_logo.png',
+      dark: '/assets/patron-logos/Alg_logo.png',
+      alt: 'Algonquin College Logo',
+      url: 'https://www.algonquincollege.com',
+      overrides: 'w-1/4 bobbing-animation-2',
+    },
+
   ],
 }
 
