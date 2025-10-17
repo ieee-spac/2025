@@ -92,13 +92,22 @@ export function Hero() {
             </div>
 
             <div className="flex flex-wrap lg:flex-nowrap md:text-nowrap w-full justify-center gap-2">
-              <a
+              {/*               <a
                 href={LINKS.GALLERY}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <ShinyButton
                   text="View Gallery"
+                />
+              </a> */}
+              <a
+                href={LINKS.SPAC_TICKETS}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ShinyButton
+                  text="Registration (SPAC)"
                 />
               </a>
             </div>
