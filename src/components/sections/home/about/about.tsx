@@ -101,6 +101,15 @@ export function About() {
       </section>
       <div className="flex flex-wrap lg:flex-nowrap md:text-nowrap w-full justify-center gap-2">
         <a
+          href={LINKS.GALLERY}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ShinyButton
+            text="View Gallery"
+          />
+        </a>
+        {/*         <a
           href={LINKS.SPAC_TICKETS}
           target="_blank"
           rel="noopener noreferrer"
@@ -108,7 +117,7 @@ export function About() {
           <ShinyButton
             text="Registration (SPAC)"
           />
-        </a>
+        </a> */}
         {/*         <a
           href={LINKS.SPAC_PLUS_AGM_TICKETS}
           target="_blank"
