@@ -19,7 +19,7 @@ export const LINKS = {
   SPAC_TICKETS: 'https://www.eventbrite.com/e/student-professional-awareness-conference-2025-tickets-1661438470189?utm_experiment=test_share_listing&sg=46bac6f1b1abfbd58224fb8e29a196e19e7dd4a112e84e17e4a90a27dd5125890e38d4c589f3ec78c4d3a2fb06fc258d4e9213a81710f6600a1e5ce02061d0b6cd2095bc6b53e5cdd80f7a78a0f2',
   SPAC_PLUS_AGM_TICKETS: 'https://events.vtools.ieee.org/m/435598',
   AGENDA:
-    'https://www.canva.com/design/DAGTJGf_Nh0/R3T3kFHxLV0lEa26p1s9oQ/view?embed',
+    'https://www.canva.com/design/DAG2RuXovj0/DGqxKJ4ecOBf4CEQezXp7A/view?embed',
   LOCATION: 'https://maps.app.goo.gl/wk5vdFH7StaCvsJf7',
   INSTAGRAM: 'https://www.instagram.com/ieeespac/?hl=en',
   LINKEDIN: 'https://www.linkedin.com/company/ieeespac/',
@@ -56,7 +56,7 @@ export const HEADER = {
     { name: 'About', path: '#about' },
     { name: 'Patrons', path: '#patrons' },
     /* { name: 'Previous Patrons', path: '#previouspatrons' }, */
-    /* { name: 'Agenda', path: '#agenda' }, */
+    { name: 'Agenda', path: '#agenda' },
     { name: 'Team', path: '#team' },
     { name: 'Contact', path: '#contact' },
   ],
