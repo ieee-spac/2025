@@ -6,14 +6,16 @@ export function Agenda() {
       <h2 className="mb-10 text-5xl font-bold text-primary sm:text-6xl">
         Agenda
       </h2>
-      <div className="relative w-full h-0 pt-[56.25%] shadow-lg mt-6 mb-4 overflow-hidden rounded-lg transform-gpu">
+
+      <div className="relative w-full shadow-lg mt-6 mb-4 overflow-hidden rounded-lg">
         <iframe
-          loading="lazy"
-          className="absolute w-full h-full top-0 left-0 border-none"
+          className="w-full h-[500px] sm:h-[600px] md:h-[700px] border-none rounded-lg"
           src={LINKS.AGENDA}
+          loading="lazy"
           allowFullScreen
         />
       </div>
     </div>
+
   )
 }
