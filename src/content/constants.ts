@@ -207,8 +207,8 @@ export const TIER_PROPERTIES = {
 export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
   [TIER_NAME.PLATINUM]: [
     {
-      light: '/assets/patron-logos/blackberry_qnx_logo_light.svg',
-      dark: '/assets/patron-logos/blackberry_qnx_logo_dark.svg',
+      light: '/assets/patron-logos/QNX-Logo-BLACK-RGB (2).svg',
+      dark: '/assets/patron-logos/QNX-Logo-QNX-CORAL-RGB.svg',
       alt: 'QNX logo',
       url: 'https://blackberry.qnx.com',
       overrides: 'w-full bobbing-animation-1',
