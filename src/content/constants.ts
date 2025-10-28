@@ -77,7 +77,7 @@ export const HERO = {
 export const ABOUT = {
   TITLE: 'About Us',
   PARAGRAPHS: [
-    'The IEEE Student Professional Awareness Conference (SPAC) is a formal networking event & dinner that serves esteemed professionals and allows them to engage with engineering and computer science students within their fields.',
+    'The IEEE Student Professional Awareness Conference (SPAC) is a formal networking event that serves esteemed professionals and allows them to engage with engineering and computer science students within their fields.',
     'SPAC provides students, academics, and industry professionals an opportunity to network and bridge the gap between classrooms and boardrooms, thereby empowering attendees to build professional connections and form a bond.',
     'First hosted in 1979, SPAC has manifested itself as an event where future professionals receive exposure to the world of employment which complements their ongoing studies.',
   ],
