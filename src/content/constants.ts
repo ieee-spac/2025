@@ -169,7 +169,7 @@ export enum TIER_NAME {
   PLATINUM = 'Platinum/Title',
   GOLD = 'Gold',
   SILVER = 'Silver',
-  /*   BRONZE = 'Bronze', */
+  BRONZE = 'Bronze',
   HOSTED = 'Hosted By',
 }
 
@@ -194,10 +194,10 @@ export const TIER_PROPERTIES = {
     titleColor: 'text-slate-400',
     gradientClass: 'from-slate-400 to-background',
   },
-  /*   [TIER_NAME.BRONZE]: {
+  [TIER_NAME.BRONZE]: {
     titleColor: 'text-amber-800',
     gradientClass: 'from-amber-800 to-background',
-  }, */
+  },
   [TIER_NAME.HOSTED]: {
     titleColor: 'text-cyan-400',
     gradientClass: 'from-cyan-400 to-background',
@@ -295,13 +295,6 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       url: 'https://www.nordion.com',
       overrides: 'w-1/3 bobbing-animation-3',
     },
-    {
-      light: '/assets/patron-logos/NAVCANADA_logo.png',
-      dark: '/assets/patron-logos/NAVCANADA_logo.png',
-      alt: 'Nav Canada Logo',
-      url: 'https://www.navcanada.ca/en/',
-      overrides: 'w-1/3 bobbing-animation-3',
-    },
     /*     {
       light: '/assets/patron-logos/ciena_logo.svg',
       dark: '/assets/patron-logos/ciena_logo.svg',
@@ -346,8 +339,15 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       overrides: 'w-1/4 bobbing-animation-3',
     }, */
   ],
-  /*   [TIER_NAME.BRONZE]: [
+  [TIER_NAME.BRONZE]: [
     {
+      light: '/assets/patron-logos/NAVCANADA_logo.png',
+      dark: '/assets/patron-logos/NAVCANADA_logo.png',
+      alt: 'Nav Canada Logo',
+      url: 'https://www.navcanada.ca/en/',
+      overrides: 'w-1/3 bobbing-animation-3',
+    },
+    /*     {
       light: '/assets/patron-logos/nokia_logo.svg',
       dark: '/assets/patron-logos/nokia_logo.svg',
       alt: 'Nokia logo',
@@ -367,8 +367,8 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       alt: 'Ottawa International Airport logo',
       url: 'https://www.yow.ca',
       overrides: 'w-1/4 bobbing-animation-4',
-    },
-  ], */
+    }, */
+  ],
   [TIER_NAME.HOSTED]: [
     {
       light: '/assets/patron-logos/ieee_uottawa_logo_light.svg',
