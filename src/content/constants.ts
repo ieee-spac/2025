@@ -215,14 +215,7 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
     },
   ],
   [TIER_NAME.GOLD]: [
-    // Commented out due to Ericsson no longer being able to sponsor SPAC
-    // {
-    //   light: '/assets/patron-logos/ericsson_logo.svg',
-    //   dark: '/assets/patron-logos/ericsson_logo.svg',
-    //   alt: 'Ericsson logo',
-    //   url: 'https://www.ericsson.com/en/about-us/company-facts/ericsson-worldwide/canada',
-    //   overrides: 'w-1/4 bobbing-animation-2',
-    // },
+
     {
       light: '/assets/patron-logos/redbull_logo.png',
       dark: '/assets/patron-logos/redbull_logo.png',
@@ -237,41 +230,6 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       url: 'https://www.lumentum.com/en',
       overrides: 'w-1/2 bobbing-animation-2',
     },
-    /*     {
-      light: '/assets/patron-logos/eef_uottawa_logo_light.svg',
-      dark: '/assets/patron-logos/eef_uottawa_logo_dark.svg',
-      alt: 'EEF uOttawa logo',
-      url: 'https://www.uottawa.ca/faculty-engineering/student-experience/funding-student-initiatives',
-      overrides: 'w-1/2 bobbing-animation-2',
-    },
-    {
-      light: '/assets/patron-logos/ieee_uottawa_logo_light.svg',
-      dark: '/assets/patron-logos/ieee_uottawa_logo_dark.svg',
-      alt: 'uOttawa IEEE Logo',
-      url: 'https://ieeeuottawa.ca',
-      overrides: 'w-1/4 bobbing-animation-2',
-    },
-    {
-      light: '/assets/patron-logos/ieee_canada_logo.jpeg',
-      dark: '/assets/patron-logos/ieee_canada_logo.jpeg',
-      alt: 'IEEE Canada Logo',
-      url: 'http://ieeecanada.org',
-      overrides: 'w-1/2 bobbing-animation-2',
-    },
-    {
-      light: '/assets/patron-logos/ieee_life_members_affinity_groups_logo.png',
-      dark: '/assets/patron-logos/ieee_life_members_affinity_groups_logo.png',
-      alt: 'IEEE Life Members Affinity Groups Logo',
-      url: 'https://life.ieee.org',
-      overrides: 'w-1/4 bobbing-animation-2',
-    },
-    {
-      light: '/assets/patron-logos/ieee_young_professionals_logo.jpg',
-      dark: '/assets/patron-logos/ieee_young_professionals_logo.jpg',
-      alt: 'IEEE Young Professionals Logo',
-      url: 'https://yp.ieee.org',
-      overrides: 'w-1/4 bobbing-animation-2',
-    }, */
   ],
   [TIER_NAME.SILVER]: [
     {
@@ -295,49 +253,6 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       url: 'https://www.nordion.com',
       overrides: 'w-1/3 bobbing-animation-3',
     },
-    /*     {
-      light: '/assets/patron-logos/ciena_logo.svg',
-      dark: '/assets/patron-logos/ciena_logo.svg',
-      alt: 'Ciena Logo',
-      url: 'https://www.ciena.com',
-      overrides: 'w-1/3 bobbing-animation-3',
-    },
-    {
-      light: '/assets/patron-logos/skyworks_logo.svg',
-      dark: '/assets/patron-logos/skyworks_logo_white.png',
-      alt: 'Skyworks Logo',
-      url: 'https://www.skyworksinc.com',
-      overrides: 'w-1/3 bobbing-animation-3',
-    },
-
-    {
-      light: '/assets/patron-logos/cse_logo.jpg',
-      dark: '/assets/patron-logos/cse_logo.jpg',
-      alt: 'CSE Logo',
-      url: 'https://www.cse-cst.gc.ca',
-      overrides: 'w-1/4 bobbing-animation-3',
-    },
-    {
-      light: '/assets/patron-logos/ised_logo_light.svg',
-      dark: '/assets/patron-logos/ised_logo_dark.svg',
-      alt: 'ISED logo',
-      url: 'https://ised-isde.canada.ca/site/ised/en',
-      overrides: 'w-1/2 bobbing-animation-3',
-    },
-    {
-      light: '/assets/patron-logos/nrc_logo.png',
-      dark: '/assets/patron-logos/nrc_logo.png',
-      alt: 'NRC Logo',
-      url: 'https://nrc.canada.ca/en',
-      overrides: 'w-1/3 bobbing-animation-3',
-    },
-    {
-      light: '/assets/patron-logos/canada_border_services_logo.jpg',
-      dark: '/assets/patron-logos/canada_border_services_logo.jpg',
-      alt: 'Canada Border Services Agency (CBSA) Logo',
-      url: 'https://www.cbsa-asfc.gc.ca',
-      overrides: 'w-1/4 bobbing-animation-3',
-    }, */
   ],
   [TIER_NAME.BRONZE]: [
     {
@@ -347,27 +262,6 @@ export const PATRONS_DATA: Record<TIER_NAME, ITIER_LOGO[]> = {
       url: 'https://www.navcanada.ca/en/',
       overrides: 'w-1/3 bobbing-animation-3',
     },
-    /*     {
-      light: '/assets/patron-logos/nokia_logo.svg',
-      dark: '/assets/patron-logos/nokia_logo.svg',
-      alt: 'Nokia logo',
-      url: 'https://www.nokia.com',
-      overrides: 'w-1/4 bobbing-animation-4',
-    },
-    {
-      light: '/assets/patron-logos/solace_logo.svg',
-      dark: '/assets/patron-logos/solace_logo.svg',
-      alt: 'Solace logo',
-      url: 'https://solace.com',
-      overrides: 'w-1/4 bobbing-animation-4',
-    },
-    {
-      light: '/assets/patron-logos/ottawa_international_airport_logo_light.svg',
-      dark: '/assets/patron-logos/ottawa_international_airport_logo_dark.svg',
-      alt: 'Ottawa International Airport logo',
-      url: 'https://www.yow.ca',
-      overrides: 'w-1/4 bobbing-animation-4',
-    }, */
   ],
   [TIER_NAME.HOSTED]: [
     {

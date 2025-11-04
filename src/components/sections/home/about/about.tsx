@@ -109,24 +109,6 @@ export function About() {
             text="View Gallery"
           />
         </a>
-        {/*         <a
-          href={LINKS.SPAC_TICKETS}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <ShinyButton
-            text="Registration (SPAC)"
-          />
-        </a> */}
-        {/*         <a
-          href={LINKS.SPAC_PLUS_AGM_TICKETS}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <ShinyButton
-            text="Registration (SPAC+AGM)"
-          />
-        </a> */}
       </div>
     </article>
   )

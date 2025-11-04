@@ -78,7 +78,6 @@ export function Footer({
               ' '
             }
             <a
-              /*            href="https://www.linkedin.com/in/aashna-verma-000/" */
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-yellow-500
